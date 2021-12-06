@@ -23,3 +23,6 @@ Time spent : - Spent around 12 hours.This time includes R&D on graph library as 
 
 <img width="384" alt="AppIcon" src="https://user-images.githubusercontent.com/5120415/144841097-915387a9-80f7-4c01-9c91-4b3a403fd5a2.png">
 
+<img width="381" alt="DetailScreen" src="https://user-images.githubusercontent.com/5120415/144841659-56879213-a720-4464-a053-14f12a9e74a9.png">
+
+
