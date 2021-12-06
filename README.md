@@ -18,4 +18,4 @@ How to run :
 3. Now run the application.
 
 
-Time spent : - I have spent around 12 hours. I had not worked on graph from long time so this time includes R&D as well. 
+Time spent : - Spent around 12 hours.This time includes R&D on graph library as well. 
