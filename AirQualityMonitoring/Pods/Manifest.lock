@@ -1,0 +1,20 @@
+PODS:
+  - CorePlot (2.3)
+  - Starscream (4.0.4)
+
+DEPENDENCIES:
+  - CorePlot (~> 2.3)
+  - Starscream (~> 4.0.0)
+
+SPEC REPOS:
+  trunk:
+    - CorePlot
+    - Starscream
+
+SPEC CHECKSUMS:
+  CorePlot: 6bfe6d30d215beec3cfd18ee43e434620119bc1e
+  Starscream: 5178aed56b316f13fa3bc55694e583d35dd414d9
+
+PODFILE CHECKSUM: 7e3f7f3b4a67b4bd93047da01ffc4a5db23fa7cf
+
+COCOAPODS: 1.10.1
