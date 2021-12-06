@@ -7,127 +7,550 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0A0E8476402B53B091B91A7DE07E0008 /* Engine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A0925310BE76B051E1B51E7FBB37F35 /* Engine.swift */; };
-		0CC54E4D0945262C1B835B699345B034 /* WebSocket.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D2727BA14E02E7210DD6B547EA7D394 /* WebSocket.swift */; };
-		0FC2A63438E3F0BF1AA9002737FEBE4A /* Pods-AirQualityMonitoring-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F9869BFE2BCA5B7B0B814C89BAEE0B90 /* Pods-AirQualityMonitoring-dummy.m */; };
-		190BC16FCBB53F6C6F2C0618B6BE7DDA /* FoundationHTTPServerHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81F95157FC4CC8593A1B1E4607562122 /* FoundationHTTPServerHandler.swift */; };
-		195E17A825CB18759C7D6511DACCB3E9 /* Server.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFD212064ED1CC47B2560F6E20526B3B /* Server.swift */; };
-		19E712862F3F845060EA7DADEAD9BC59 /* FoundationTransport.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D7E34251E9353A38AC748BB94EDC575 /* FoundationTransport.swift */; };
-		1BCEC1C72A76476B70CE4B032A9D9B32 /* StringHTTPHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16D70531198624C7D8B14FF91C62FF6B /* StringHTTPHandler.swift */; };
-		28D3CED62E15072BE2291498D54231D0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
-		359D3455A362843977E8E3076B7D8162 /* TCPTransport.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56CCA8582A00BBFBC2E9AFFC1C1D53A9 /* TCPTransport.swift */; };
-		36D1530899987EF165D0AFC6D2B9EAF2 /* FrameCollector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37C291A02C054326B5C6022EACD814E4 /* FrameCollector.swift */; };
-		37E36C07C168E5737FBA757736AB1263 /* Data+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7175E21DED4337E7BBD3EF7424F315F6 /* Data+Extensions.swift */; };
-		4572F22239A84AC23B262764D429E2EB /* Framer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1454E39E11FD28A611495E03B2015FD4 /* Framer.swift */; };
-		47F9756491ABF30C465923FD18867EF8 /* Pods-AirQualityMonitoring-AirQualityMonitoringUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 9A4471B5A052FA7B49E0CA932884B774 /* Pods-AirQualityMonitoring-AirQualityMonitoringUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		4D322C7978617308B276D6F4902C2335 /* WSEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ED9AF7BDFE0F03CE129D72D85FCA460 /* WSEngine.swift */; };
-		630F9707C298FB8EA9292D53B032499F /* Pods-AirQualityMonitoring-AirQualityMonitoringUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 28ED62573A12A9333F82458168E9650B /* Pods-AirQualityMonitoring-AirQualityMonitoringUITests-dummy.m */; };
-		703C0586C478A922E21934D3B149A71E /* Starscream-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 21B65F09370A4D9877255EC1C47060A2 /* Starscream-dummy.m */; };
-		711BDCAC51741FE975358BA49ADEFAEA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
-		793D18E42CC454D1C4225339797DB9EB /* WSCompression.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1918C09D193EF7F62A7C2611F12AC44B /* WSCompression.swift */; };
-		822BCFA4BE6B71B18DF70B82A647603E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
-		894E47358149672D5810C31E4B64AF0D /* HTTPHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35ED0E33A6DD024AC0E71FEF3EA74D7C /* HTTPHandler.swift */; };
+		004C14AC2BD4AA6772DCD06EB902F1CC /* CPTGridLines.m in Sources */ = {isa = PBXBuildFile; fileRef = D0AABADC21F59AE829F5A9A5EC79BB2B /* CPTGridLines.m */; };
+		00AD8D57A4327B3091EF3FF275B0A0F5 /* CPTAnimationPeriod.h in Headers */ = {isa = PBXBuildFile; fileRef = 0DDDFED6828BB652A9CD85E3F3977583 /* CPTAnimationPeriod.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		028929526E2E2D4E5E6AE596B692189B /* CPTPlotSpace.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CC44E60941435A5B3BCEF4C73FE36E5 /* CPTPlotSpace.m */; };
+		04069D864A50D7B0D7A62F817978C878 /* CPTMutableShadow.m in Sources */ = {isa = PBXBuildFile; fileRef = AFE476E559B45543FF506E591769E02C /* CPTMutableShadow.m */; };
+		04BCBC5553A5C90B36DA6D6D57278489 /* CPTAnnotation.h in Headers */ = {isa = PBXBuildFile; fileRef = A6D4B3E5B9C25214E0A6CBDD36A5B40F /* CPTAnnotation.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		060686E408C4544F8AE8C872F40BD22E /* _CPTAnimationNSDecimalPeriod.m in Sources */ = {isa = PBXBuildFile; fileRef = B1EC262D5D5B10A5758A9634282E5BC3 /* _CPTAnimationNSDecimalPeriod.m */; };
+		0A0E8476402B53B091B91A7DE07E0008 /* Engine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62E4FA419493C6F68FC6435E25CD8B4B /* Engine.swift */; };
+		0B3029C3B3B5FD69B6A77AC75281CF1B /* CPTGraph.h in Headers */ = {isa = PBXBuildFile; fileRef = DE7C930E57C237F8D8419D4A2BB2BFDF /* CPTGraph.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0CB3123E5CC1B8DE344F400A919F1FD6 /* CPTAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = 83E510C26D1A5946668B3EFF7906C1B4 /* CPTAnnotation.m */; };
+		0CC54E4D0945262C1B835B699345B034 /* WebSocket.swift in Sources */ = {isa = PBXBuildFile; fileRef = F03EBC735755D499BA07C4D4B41214F8 /* WebSocket.swift */; };
+		0FF9606FB92A6963CEEA7ADE46B85649 /* CPTXYAxis.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D64D2E424B4B8913258281AEAA7144C /* CPTXYAxis.m */; };
+		10B362A1C1F1D5969C86D7EA7B0131D8 /* CPTMutableNumericData.h in Headers */ = {isa = PBXBuildFile; fileRef = 230E341DB61730C2E54E33082BD78B68 /* CPTMutableNumericData.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		124DC89738FAFEF48C8FEA69D85661DE /* CPTAxisLabel.h in Headers */ = {isa = PBXBuildFile; fileRef = ADAC7E983EC03C361881DD9E41D8B0E6 /* CPTAxisLabel.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		135A1447F8E8C7A42F3462C50D9F475F /* _CPTAnimationCGRectPeriod.h in Headers */ = {isa = PBXBuildFile; fileRef = 29A2948CE20116410C2787547D839A37 /* _CPTAnimationCGRectPeriod.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		14F2061BC440E3DB44066D2B9BDC06B0 /* CPTLineCap.h in Headers */ = {isa = PBXBuildFile; fileRef = C63717A0B09B1B26E443196B9B421E36 /* CPTLineCap.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		16216C63FB422037DCCF1EFFDF45D97B /* CPTLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = C6FBE951D071C8613F22C1D562107762 /* CPTLayer.m */; };
+		16D494C6F94A4AAD7DE65582770A2FB2 /* CPTPlotAreaFrame.h in Headers */ = {isa = PBXBuildFile; fileRef = 579534C290E328B908EA02D5ED47D2EA /* CPTPlotAreaFrame.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		18F1703A9433815061C1222D20F626ED /* CPTGradient.h in Headers */ = {isa = PBXBuildFile; fileRef = 44065E4221DAFA49904113EB5D5FFA01 /* CPTGradient.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		190BC16FCBB53F6C6F2C0618B6BE7DDA /* FoundationHTTPServerHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CEBFC58A90FCE017E5E2C8F68C076CD /* FoundationHTTPServerHandler.swift */; };
+		195E17A825CB18759C7D6511DACCB3E9 /* Server.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88EBF185765FF72BD318952F198A3C90 /* Server.swift */; };
+		197513A2621EC79055B334CDC663F3BB /* CPTImage.m in Sources */ = {isa = PBXBuildFile; fileRef = AD526F2DB22703944C307F3E4D044C68 /* CPTImage.m */; };
+		19E712862F3F845060EA7DADEAD9BC59 /* FoundationTransport.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DED6B4D1DAA276529B5B34874D70019 /* FoundationTransport.swift */; };
+		1BCEC1C72A76476B70CE4B032A9D9B32 /* StringHTTPHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5937CC02CCBA86DBB10AA1BEB3F8775 /* StringHTTPHandler.swift */; };
+		1C14B37E0DE300F055BF5C82E6590D7F /* CPTAxis.h in Headers */ = {isa = PBXBuildFile; fileRef = 7A69805FC342317ED895BD8FF752FB37 /* CPTAxis.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1C66D714978A131B8E652CBA9D916C44 /* CPTAxisSet.m in Sources */ = {isa = PBXBuildFile; fileRef = 45E34BCDF705EA3EC82A2B7074E0C260 /* CPTAxisSet.m */; };
+		1CE7B19C469AEEDB78DB5B84A5EB661F /* _CPTFillImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B04E20F029B83C58E4E3104531FC887 /* _CPTFillImage.m */; };
+		1D6632975494554732368DAB9A903EAB /* CPTLineCap.m in Sources */ = {isa = PBXBuildFile; fileRef = DB1B3A882710615C57088AFDB3DAC5F2 /* CPTLineCap.m */; };
+		1E8A57D2036013B1D370556F6FA2163B /* CPTAnnotationHostLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 577EB4392680F466D0F977155D9FC409 /* CPTAnnotationHostLayer.m */; };
+		1ECD599F226C7BFAB4695CC41A01FE16 /* _CPTFillColor.m in Sources */ = {isa = PBXBuildFile; fileRef = DACE2084D87CFC96CB8C82A0D83E9F00 /* _CPTFillColor.m */; };
+		1F6C512933139A1E7174F199E03E757F /* CPTAxisLabelGroup.h in Headers */ = {isa = PBXBuildFile; fileRef = BA5B88A25B412A39592206A691ECF2FC /* CPTAxisLabelGroup.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1F9AAEB0584A5D1E7B049A85AB456596 /* CPTLegend.h in Headers */ = {isa = PBXBuildFile; fileRef = DE5E0E5C384A78F58E8904D6FD7EEBE1 /* CPTLegend.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		21A199DDB92516873560E88636023A68 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FE7F427CA20FCF5EB55A191443C28288 /* QuartzCore.framework */; };
+		23A1E8FD20ED51A858AB0EA2DA2BD9F6 /* CPTTheme.h in Headers */ = {isa = PBXBuildFile; fileRef = 1C9C9D06B56D143C02EA750C9242CBC5 /* CPTTheme.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		23D06B83548C0471419A48FB15F0A6F6 /* _CPTDarkGradientTheme.h in Headers */ = {isa = PBXBuildFile; fileRef = 48EC21CA67A9EC0E4D8F784B6F093643 /* _CPTDarkGradientTheme.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		24899282849C601442EF7FB942A4BA1B /* CPTDefinitions.h in Headers */ = {isa = PBXBuildFile; fileRef = 2B86A04DB986490BF058A93AE24675BF /* CPTDefinitions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		24A5F4CE5F3F014D2B2EE226E5071947 /* CPTNumericDataType.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BB589CF5C4121B92C0460DD6AD3D932 /* CPTNumericDataType.m */; };
+		251B810B075E64C399D31C1E54F39C23 /* _CPTSlateTheme.h in Headers */ = {isa = PBXBuildFile; fileRef = E4FB635263131A4C4C57C355BFF3671E /* _CPTSlateTheme.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		268D0340E6A89E7EDB7E0F66049D521A /* CPTConstraints.m in Sources */ = {isa = PBXBuildFile; fileRef = C874BD61FCF6182145289A306ED21EDA /* CPTConstraints.m */; };
+		26F3937AF78525A4B7673BB851DA06B4 /* NSDecimalNumberExtensions.h in Headers */ = {isa = PBXBuildFile; fileRef = 35A775F8BCF5BDAFC5ECA3BA094FF086 /* NSDecimalNumberExtensions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		272DE32DED1CC543865650E7BDE1D92D /* CPTFunctionDataSource.h in Headers */ = {isa = PBXBuildFile; fileRef = DDB78571B60F02C2218DD21AABAF63B7 /* CPTFunctionDataSource.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		27FB94692536F45D259BAB86333B4E70 /* CPTImage.h in Headers */ = {isa = PBXBuildFile; fileRef = CEE43D6CD4430756ECD89389C9BE2990 /* CPTImage.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		281C58A9BBE906CD4FE4AA72119DE4DE /* _CPTConstraintsFixed.m in Sources */ = {isa = PBXBuildFile; fileRef = C0DAED64B496E1A9133A5F82A28820CD /* _CPTConstraintsFixed.m */; };
+		28BCF774D45F16CAF8349D10C7A7C5E3 /* CPTPlotRange.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C4EC11CB1DE364BDFA75EDACC65A157 /* CPTPlotRange.m */; };
+		2ACBAE4410F07E9768598B75984ECCD4 /* CPTBorderedLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = A52AE5B3B775A9D2ADF0CAD9FC0D9BA6 /* CPTBorderedLayer.m */; };
+		2C0F96CF53CFCE194DE7569E012A07C9 /* _CPTPlainWhiteTheme.m in Sources */ = {isa = PBXBuildFile; fileRef = C9C39F8362A7FB5A15F20CF19387337D /* _CPTPlainWhiteTheme.m */; };
+		2EA02B2A9A33B30CAE9B5C778F07EC25 /* CPTFill.h in Headers */ = {isa = PBXBuildFile; fileRef = B144BD72ACC8AAF3A1269A79CB27AAF1 /* CPTFill.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3168458E2BE3A583A6DFF749E5F86B51 /* CPTMutableLineStyle.h in Headers */ = {isa = PBXBuildFile; fileRef = A7C4F35E6E858580748B262DDD78640B /* CPTMutableLineStyle.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		32CA32CFE9DC0968A04B09F2EC02FD30 /* CPTGridLineGroup.m in Sources */ = {isa = PBXBuildFile; fileRef = DE97F690977EAA610749F3477958D3DD /* CPTGridLineGroup.m */; };
+		34D5CA5A79C811234FC37D583E9C5F02 /* CPTLayerAnnotation.h in Headers */ = {isa = PBXBuildFile; fileRef = 85934B9E350A7FA1B6A1E17E5B6FEF19 /* CPTLayerAnnotation.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		35791C270A9B00C24871C8BE4E766461 /* NSCoderExtensions.h in Headers */ = {isa = PBXBuildFile; fileRef = 2572ECF5A87BF09EE7AB1D00620725CA /* NSCoderExtensions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		359D3455A362843977E8E3076B7D8162 /* TCPTransport.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2837AF461A835740510F9FF3643EC329 /* TCPTransport.swift */; };
+		36D1530899987EF165D0AFC6D2B9EAF2 /* FrameCollector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79CBD7A1E3357A343812BA83CAE5E0E9 /* FrameCollector.swift */; };
+		3755A01502011152D7285129BCF81FCE /* _CPTPlainWhiteTheme.h in Headers */ = {isa = PBXBuildFile; fileRef = 6AFF15B04F4B6AE9B2CE68EDDA1C773B /* _CPTPlainWhiteTheme.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		3794AC059BABCD35E15191DF66BC1D20 /* CPTPlotSpaceAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = B2C9BC90D9CDA0F4280911FCBD1F94DD /* CPTPlotSpaceAnnotation.m */; };
+		37E36C07C168E5737FBA757736AB1263 /* Data+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4957BCECC49B7B04F6A63FBF2729599D /* Data+Extensions.swift */; };
+		398521597815AFF9E859834441D2DFF1 /* CorePlot.h in Headers */ = {isa = PBXBuildFile; fileRef = 43B192F76BDF5DBC3716C36559300367 /* CorePlot.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3A0C409798C00C01DE6995CA14B2F5DB /* _CPTFillGradient.m in Sources */ = {isa = PBXBuildFile; fileRef = C5328D90FD7EF800F177561DDA5B214F /* _CPTFillGradient.m */; };
+		3CB4707D9D62AF606A6876F5C11E91FC /* CPTTradingRangePlot.h in Headers */ = {isa = PBXBuildFile; fileRef = 719A45D884FB2F59F5F929D05118587C /* CPTTradingRangePlot.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3F2DFBDEA85D365F20662DD48935CE64 /* CPTTextStyle.m in Sources */ = {isa = PBXBuildFile; fileRef = BDBB0437E97D2F1C697FBC4E7803C190 /* CPTTextStyle.m */; };
+		401E78AB9F9649F6405BE42F170DDD1D /* _CPTStocksTheme.h in Headers */ = {isa = PBXBuildFile; fileRef = FC78054F6399CBCAB2252979CCDF48ED /* _CPTStocksTheme.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		4300A4B7FB171806BF0767818ED28912 /* CPTPieChart.h in Headers */ = {isa = PBXBuildFile; fileRef = 10F327ECF2BF6D5D0E847B5133E41020 /* CPTPieChart.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		437CF0CD64FEA275D593163A682BB486 /* _CPTAnimationPlotRangePeriod.h in Headers */ = {isa = PBXBuildFile; fileRef = 592E2AF390535600197199B8422FC5ED /* _CPTAnimationPlotRangePeriod.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		4401FC4E835889AF9D67030857F79355 /* CPTRangePlot.m in Sources */ = {isa = PBXBuildFile; fileRef = C071BD505C7FE123FE480C3977D65C49 /* CPTRangePlot.m */; };
+		4549B2EFADDBAECEA15A1B99A29401E8 /* CPTDefinitions.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BC01E9BDD6991ACC6F48F6E7231A268 /* CPTDefinitions.m */; };
+		4572F22239A84AC23B262764D429E2EB /* Framer.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9DDDD89F2DF4F29C63BFE2513BF031C /* Framer.swift */; };
+		473F0F58D4A951C68EBE8A056C780779 /* CPTCalendarFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = F268B80501A0FD2B9360963BE99019A0 /* CPTCalendarFormatter.m */; };
+		483EE8BF8479A7C52266DF64FFB0605D /* CPTPlatformSpecificFunctions.h in Headers */ = {isa = PBXBuildFile; fileRef = 18CD6B118FFB804A22F3594356A5F8DC /* CPTPlatformSpecificFunctions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		48E9284D3D7AB376694A9D1AB63CC63C /* _CPTAnimationCGSizePeriod.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A7791D7682FB891B2214FA9DA78BF4F /* _CPTAnimationCGSizePeriod.m */; };
+		48EDDA1BCF7A2C6B92F5C334DC46AFBA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FDD2AF2EE71C229BC9C64692BE5DE6C2 /* Foundation.framework */; };
+		4A1B93C6D2348F9E1A620BF209D86DC1 /* CPTPlotSymbol.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AF311013A54858ACFE612B60E1B9225 /* CPTPlotSymbol.m */; };
+		4A8BD40384C41A2C9F988A3722900B42 /* CPTFill.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B3241B39074F0A2269E2C4BE2ED5C94 /* CPTFill.m */; };
+		4AAB1ABA43C86AC8F914B43F699A0F4D /* CPTDebugQuickLook.h in Headers */ = {isa = PBXBuildFile; fileRef = 8BEE8DD5F45C31B155B4F09EAF8274A3 /* CPTDebugQuickLook.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4B79266A381E01F98A929687BF7E4649 /* CPTMutableNumericData+TypeConversion.h in Headers */ = {isa = PBXBuildFile; fileRef = 33987970F310BA8F7667306161B29C5B /* CPTMutableNumericData+TypeConversion.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4D322C7978617308B276D6F4902C2335 /* WSEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59927E6581FE303E27E6E110730D647A /* WSEngine.swift */; };
+		51EEB978ED7505A328E7B0EDF71E1818 /* _CPTPlainBlackTheme.m in Sources */ = {isa = PBXBuildFile; fileRef = D27C9D653F90CD1924CC84BDA4F568A4 /* _CPTPlainBlackTheme.m */; };
+		5215D387C3D333283CC290727424F78A /* CPTShadow.m in Sources */ = {isa = PBXBuildFile; fileRef = 643A281E5F12F8FDAEB1C75E0363AF2D /* CPTShadow.m */; };
+		52952B877C504CC0CA16286B2A7D4068 /* _CPTAnimationCGFloatPeriod.h in Headers */ = {isa = PBXBuildFile; fileRef = 350541B8813F45F1E2DEFC5F1A7DF987 /* _CPTAnimationCGFloatPeriod.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		52FDA1D3037EF8194E88EAE0EFC5D8C1 /* _CPTAnimationTimingFunctions.h in Headers */ = {isa = PBXBuildFile; fileRef = 8E17CCAA97FF92124193D8FD64AB528A /* _CPTAnimationTimingFunctions.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		53F5E2014BB88F70FCD78997BA766DED /* CPTAxis.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F569181B7B708183DD1D937479ED580 /* CPTAxis.m */; };
+		561EC9A7E023FBB106D6F5F2BD7B3CA4 /* CPTAnnotationHostLayer.h in Headers */ = {isa = PBXBuildFile; fileRef = 6BB22CDE4143C5E50585CDCEA14CFBE7 /* CPTAnnotationHostLayer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5668E27241D6BF3E9E60B11D25359C78 /* CPTRangePlot.h in Headers */ = {isa = PBXBuildFile; fileRef = DD8F6326DBDBE8B0C4F308223319A68D /* CPTRangePlot.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		572A588F92F5F7A95E0BF20770A6580B /* CPTMutableNumericData.m in Sources */ = {isa = PBXBuildFile; fileRef = 10ED658E5BAD9DC529905F77D4C8CCEE /* CPTMutableNumericData.m */; };
+		58B3CC1D11B69BC32A34F67709E7C2F4 /* CorePlot-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F49ADF4A32D91FFF0710D083ED18CE1 /* CorePlot-dummy.m */; };
+		596159805B98D764761627DC70358C6B /* _CPTBorderLayer.h in Headers */ = {isa = PBXBuildFile; fileRef = 53963486A1AFAC0D1FB30D50DFFC6710 /* _CPTBorderLayer.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		59D48E26EF51966AC9C76D9758A0C8D5 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C27FDEB1FE0D148C2525409AF55CD9DD /* UIKit.framework */; };
+		5A2184FFFB2E4038B0B04B48EB40D124 /* CPTLineStyle.m in Sources */ = {isa = PBXBuildFile; fileRef = EAC88322895AB86A678246FD013121D8 /* CPTLineStyle.m */; };
+		5B987C19D8BD2A8B776506103EBDF3EE /* CPTXYGraph.h in Headers */ = {isa = PBXBuildFile; fileRef = 96A8F6CBEE79CBA84C52ECC2CD01FFF1 /* CPTXYGraph.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5BE9A50A7433A500E8CD1689C6AF77AF /* CPTAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BBAF72B136B696988D3CCD680B29A0F /* CPTAnimation.m */; };
+		5C453B56AC0120F389FBFD40D2C913C0 /* _CPTMaskLayer.h in Headers */ = {isa = PBXBuildFile; fileRef = 674A8F1440B8350C87F3187B2FEFE09B /* _CPTMaskLayer.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		5CF23C4F32A73406287F0600CC3E1521 /* CPTNumericData.h in Headers */ = {isa = PBXBuildFile; fileRef = 40EF585837E868EA04AD01BAE747EA01 /* CPTNumericData.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5CFAEABF672025658D309D45289BA6EC /* CPTConstraints.h in Headers */ = {isa = PBXBuildFile; fileRef = 415439A9C9631F69908F40B2F17CC195 /* CPTConstraints.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5D15F6C1BBA6EFBEA2DC5D12F8F75341 /* CPTUtilities.h in Headers */ = {isa = PBXBuildFile; fileRef = F6A4A8F3F6DCFA9934B049EE1A1B4403 /* CPTUtilities.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		633CB4E57E832593995C234AD17A29AE /* CPTMutableLineStyle.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B50890E9A7992912625F3CF54100347 /* CPTMutableLineStyle.m */; };
+		64FC6F9F9AAC5570AA3FC3CA21471817 /* CPTTextLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 9EFF8FA95E84FCC993DC681CF7F225D2 /* CPTTextLayer.m */; };
+		66C760F6AA735797F956D7328D5541C4 /* CPTTheme.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EAFBCB05DB8541F7FA49FE2C0E3A738 /* CPTTheme.m */; };
+		67BE75371010AC27FA88EC5CF022F596 /* CPTShadow.h in Headers */ = {isa = PBXBuildFile; fileRef = F854C0006C5097B19FA0DD7844790FB4 /* CPTShadow.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		693A0F86621132F6E86169533DB17EC3 /* CPTPlotSymbol.h in Headers */ = {isa = PBXBuildFile; fileRef = 776E32F84FBFF8EED4BB01B43FBED76A /* CPTPlotSymbol.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6B31D3E586423A55597999CB069FBAAF /* CPTExceptions.h in Headers */ = {isa = PBXBuildFile; fileRef = 16000206B11AB5012ACAA993ECBE9B0F /* CPTExceptions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6CD1F1A0C22A5C5AF4EFC1763DFB5599 /* CPTColor.h in Headers */ = {isa = PBXBuildFile; fileRef = 2F29668C38D2792EFDD11304220AA024 /* CPTColor.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6FA61AE5470F733DCC13502601CFEAA3 /* CPTPathExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C1C3C5ADDA967A8C4193A25CA2D6E23 /* CPTPathExtensions.m */; };
+		703C0586C478A922E21934D3B149A71E /* Starscream-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 11917B00DC71A5727BC16A1FF1376442 /* Starscream-dummy.m */; };
+		744FC603989F967B43D174AB736D496B /* CPTMutableShadow.h in Headers */ = {isa = PBXBuildFile; fileRef = DF88ADE4C8D92D2827AD4C1DAFBCF8F5 /* CPTMutableShadow.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		74F79ACE1CF79D113ECF9DA23ECA2391 /* CPTDerivedXYGraph.h in Headers */ = {isa = PBXBuildFile; fileRef = 9DDB8226F9B3F706BDBA314984A9DD22 /* CPTDerivedXYGraph.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		752F808B718CDE92AD2B31AA537884C9 /* _CPTAnimationCGSizePeriod.h in Headers */ = {isa = PBXBuildFile; fileRef = 4E85184202E471D0C76DC41C9FFC42DD /* _CPTAnimationCGSizePeriod.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		793D18E42CC454D1C4225339797DB9EB /* WSCompression.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16FFFC367176111BD5D09734B639D442 /* WSCompression.swift */; };
+		79BF69D45BB28662F757502152ABB8C3 /* _CPTPlainBlackTheme.h in Headers */ = {isa = PBXBuildFile; fileRef = 60213CD21F8A66F454C20F01EBCF4422 /* _CPTPlainBlackTheme.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		7B4359556763428AE125868EF34229DC /* _CPTAnimationNSNumberPeriod.h in Headers */ = {isa = PBXBuildFile; fileRef = D12917C302C34E53ECB64BF12BCFA6B2 /* _CPTAnimationNSNumberPeriod.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		7D791CE56069E4E5A9A9230FF35D6012 /* _CPTXYTheme.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E6B58FFCCA567921CE3761B89F22E45 /* _CPTXYTheme.m */; };
+		7D95AE68164D7490C78F6C0B9A95E843 /* CPTAxisTitle.h in Headers */ = {isa = PBXBuildFile; fileRef = 372D67E92165759A694F9328750F1206 /* CPTAxisTitle.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7DE58A04D1388501952A2D9E094A36C5 /* CPTXYGraph.m in Sources */ = {isa = PBXBuildFile; fileRef = D329E7C21AC7C6818C8764A339172B18 /* CPTXYGraph.m */; };
+		7E3C1CB0B97AEF5065AA9E0BA4AA64B2 /* _CPTAnimationNSNumberPeriod.m in Sources */ = {isa = PBXBuildFile; fileRef = 15F8FD95D3469D692B706206F7DF9763 /* _CPTAnimationNSNumberPeriod.m */; };
+		7E5FF53F68F597CFBE7F5CCC4FEBE6EC /* CPTGraph.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BC06715528EFD3B80788B24BA408994 /* CPTGraph.m */; };
+		7E72398E14B6E8F953BDE9A0AFC988D9 /* _CPTAnimationCGPointPeriod.m in Sources */ = {isa = PBXBuildFile; fileRef = 96662F5868FA86DD646A46AD3591F77F /* _CPTAnimationCGPointPeriod.m */; };
+		7EA0E35F7B8D96D5CE6DC3A077EEBDF2 /* _CPTConstraintsRelative.m in Sources */ = {isa = PBXBuildFile; fileRef = 06F8D0C461886DF20BD901B0AD386318 /* _CPTConstraintsRelative.m */; };
+		822BCFA4BE6B71B18DF70B82A647603E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FDD2AF2EE71C229BC9C64692BE5DE6C2 /* Foundation.framework */; };
+		850BB426C7A040EA86E155F18CB3F450 /* CPTTextStylePlatformSpecific.h in Headers */ = {isa = PBXBuildFile; fileRef = F7A3D87107536F8D6BD7C1AC51B57482 /* CPTTextStylePlatformSpecific.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		86A09325C04507D3E2E08488B6C36914 /* CPTBorderedLayer.h in Headers */ = {isa = PBXBuildFile; fileRef = 004AF9DA0E2F64AAACD6851775DD9780 /* CPTBorderedLayer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		886F400C8DC065A5B2780D74867C1A7A /* CPTLegendEntry.m in Sources */ = {isa = PBXBuildFile; fileRef = 50EBCC622F786B30D5DB250838BA9C7A /* CPTLegendEntry.m */; };
+		894E47358149672D5810C31E4B64AF0D /* HTTPHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = E49E3AC9754016E4B6944220F32BBB72 /* HTTPHandler.swift */; };
+		89FB70F7A79AE454F156746393DE7F11 /* CPTLimitBand.h in Headers */ = {isa = PBXBuildFile; fileRef = 8699C584DF28B0F4B67D38FE1AB71651 /* CPTLimitBand.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8A0D0455CAEB39022F8C2094136F820A /* CPTCalendarFormatter.h in Headers */ = {isa = PBXBuildFile; fileRef = 39C22DF728D16C092AE49D28584C31AD /* CPTCalendarFormatter.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8B4EF1EFB0DEA190807EE679177298A2 /* CPTXYAxisSet.m in Sources */ = {isa = PBXBuildFile; fileRef = E49509CEFE1936D81C8567992B111877 /* CPTXYAxisSet.m */; };
+		8D0584F03043480C47A5C1C983F0CE40 /* CPTGridLineGroup.h in Headers */ = {isa = PBXBuildFile; fileRef = 1AD571D53C6E2085B82B9053911FE967 /* CPTGridLineGroup.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8FE76AA87D06C0889A05FE183E27F45E /* CPTXYAxis.h in Headers */ = {isa = PBXBuildFile; fileRef = 6BF306DCAFFD82D2794BDFEEE6554AC0 /* CPTXYAxis.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		92838B53D9AEA398ADC5FFBE426FA99A /* CPTPlotArea.h in Headers */ = {isa = PBXBuildFile; fileRef = 701B25CD3640F588F45A107EA57A051D /* CPTPlotArea.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		931E0F53F918AE2D33A9319292CC6B44 /* _CPTBorderLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 824DD7C7F820660C59711C94DEFE590D /* _CPTBorderLayer.m */; };
 		938AC24B6011E72D450B25C1DDD2DF0B /* Pods-AirQualityMonitoringTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B6C6444C21EE7D98F7A3ACD67A44A23 /* Pods-AirQualityMonitoringTests-dummy.m */; };
-		946911E4FFC48BF8F84D076D258A1322 /* FoundationSecurity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5831A57C2E79638C447411ED69EB6C42 /* FoundationSecurity.swift */; };
-		99CC2D5DC15DBA9F5A494E76FF940B62 /* Starscream-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = ECFB158E08A6502A38761C96CB68975B /* Starscream-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		C07413B05F2A3CD997EBCE9D8EE5FD08 /* Compression.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2EAFCD04DEECC2AC6B8727048A80617 /* Compression.swift */; };
-		C2809B4763602D15A7384398343AE406 /* Transport.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9C8BC22AA74FEDA9CF44852D28F68A4 /* Transport.swift */; };
-		C5349DA0CD74D6B492FEECCC6144D235 /* Pods-AirQualityMonitoring-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = C975CA91DC93ACDF3C0015AC3C7D4967 /* Pods-AirQualityMonitoring-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		945A19BE808A8A70C14055F2D06C4AA0 /* CPTExceptions.m in Sources */ = {isa = PBXBuildFile; fileRef = F6EF0B4A4B5E0BD24F6CCE1F13BB6422 /* CPTExceptions.m */; };
+		946911E4FFC48BF8F84D076D258A1322 /* FoundationSecurity.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDE5F27E4F7A56E04751D61AE2C681AE /* FoundationSecurity.swift */; };
+		946DA9D817C2AF4A3200CF651269B137 /* CPTColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 821AB191B36E13DA4573A5DB77B5B497 /* CPTColor.m */; };
+		99CC2D5DC15DBA9F5A494E76FF940B62 /* Starscream-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 589CF44B7745C175B7DE93C9390406C7 /* Starscream-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		99F9F7CE64B0AA8F900D76EDAD5E458C /* _CPTXYTheme.h in Headers */ = {isa = PBXBuildFile; fileRef = A833ED23029A3C7F252A7BE07D87B1FA /* _CPTXYTheme.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		9A7B8889C9884DB4C22B297F6163DF1D /* CPTPlotArea.m in Sources */ = {isa = PBXBuildFile; fileRef = 2063E3205F0D6D01B9FDA20D7B6C3A79 /* CPTPlotArea.m */; };
+		9C5064E659D2E3A39D48A85D18023AAF /* CPTAnimationOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 679A79F2819982E6A0A7399FFE59F58D /* CPTAnimationOperation.m */; };
+		9E5CECC5053D7C5A8ED283A54C2A9D7A /* CPTLegend.m in Sources */ = {isa = PBXBuildFile; fileRef = 20CB54828C812F538D2CD10322CDF306 /* CPTLegend.m */; };
+		9EBB2B92F0D8113AF320B499FB481649 /* CPTImagePlatformSpecific.m in Sources */ = {isa = PBXBuildFile; fileRef = 1471B3F4520F599B224B371F797B75CA /* CPTImagePlatformSpecific.m */; };
+		9FC0C18232A5D2EBDF66605B961C7736 /* CPTLayerAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = 4319F244ACD391125C89E645D806D792 /* CPTLayerAnnotation.m */; };
+		A2C14E80441FCBD161E88BA7CA73F897 /* _CPTSlateTheme.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B3D33276AA83E52BC2CCA619B389865 /* _CPTSlateTheme.m */; };
+		A3EBB274296C1FD6B9AA56A08143149D /* CPTLimitBand.m in Sources */ = {isa = PBXBuildFile; fileRef = DA3EC08902CE4A20B0A491235441B6A9 /* CPTLimitBand.m */; };
+		A4524AA2CEB1B734A2F48C7D192D8219 /* CorePlot-CocoaTouch.h in Headers */ = {isa = PBXBuildFile; fileRef = 42E588A4C27CCB4CF6E6D37DEA4F051D /* CorePlot-CocoaTouch.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A51FA4217F4C2CE08C53ABC24CA1D89F /* _CPTAnimationCGPointPeriod.h in Headers */ = {isa = PBXBuildFile; fileRef = F29B9B13087AD61A26A8166902EC9B79 /* _CPTAnimationCGPointPeriod.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		A55EEC8F80010FFE1CFBF39362651AAC /* CPTMutableNumericData+TypeConversion.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CC871AF740B96534E0C020E55B5BC80 /* CPTMutableNumericData+TypeConversion.m */; };
+		A674C398F46A2E2232ED00C9B3FB65D6 /* NSDecimalNumberExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 51099A0A0275EE2E30385A2DC7122949 /* NSDecimalNumberExtensions.m */; };
+		A74FBB6887801634A7BED536012C4836 /* Pods-AirQualityMonitoring-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = C975CA91DC93ACDF3C0015AC3C7D4967 /* Pods-AirQualityMonitoring-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A789C37D4913A72153781DBEE9275F02 /* CPTPlotSpace.h in Headers */ = {isa = PBXBuildFile; fileRef = B46C183A8F556C0FB9CD249511B0B07F /* CPTPlotSpace.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A95AF8BBC08C12C8AAA8B5E9A84C1606 /* CPTUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = A6D5413F60660D6B04E8973E72EE0488 /* CPTUtilities.m */; };
+		A9F575321401B4EA8501D37A74364C46 /* NSCoderExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 07FC814E02145FE096D7D671C0F123AA /* NSCoderExtensions.m */; };
+		AB51AB090319A53714E3F3A8FA037CBF /* CPTAnimationPeriod.m in Sources */ = {isa = PBXBuildFile; fileRef = D4A2D7B70646C44CB2CE77561AD660AB /* CPTAnimationPeriod.m */; };
+		AC26B0577719E38D156341D8FF6ED539 /* _CPTFillImage.h in Headers */ = {isa = PBXBuildFile; fileRef = EC4ED4805A0F4152F85686E22CBC83E3 /* _CPTFillImage.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		AC3127ABB7F5041D74B60CCE09DB24FC /* CPTTextStylePlatformSpecific.m in Sources */ = {isa = PBXBuildFile; fileRef = D39321635880CBEE2D8697C35CC9B432 /* CPTTextStylePlatformSpecific.m */; };
+		AD626C186868BC5A3B634ECE1A5DCCE1 /* CPTAxisLabelGroup.m in Sources */ = {isa = PBXBuildFile; fileRef = FF1CE0489BCDF7975F9665961852C0A2 /* CPTAxisLabelGroup.m */; };
+		AE26F4E0248CF6D4BD1F1B906E768F3E /* CPTLegendEntry.h in Headers */ = {isa = PBXBuildFile; fileRef = E55299F7C856246B3B84E8E037048AA0 /* CPTLegendEntry.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AEE3E3BDF0D28C4FCF9CC585967D88E7 /* CPTPlatformSpecificFunctions.m in Sources */ = {isa = PBXBuildFile; fileRef = F57CB0D2207FA8EB60ED5CEE844CC0C9 /* CPTPlatformSpecificFunctions.m */; };
+		AFD71CAAFA90408662B7744EDAAD52C5 /* NSNumberExtensions.h in Headers */ = {isa = PBXBuildFile; fileRef = 8FEC5159A98D60B32AB3D9401DC691D0 /* NSNumberExtensions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B147B27D4F073D1C4536EEBADBB668BC /* _CPTDarkGradientTheme.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FFD743B90A56416E3F9A7EE1087FA01 /* _CPTDarkGradientTheme.m */; };
+		B17B3D932F8F88C9154D26EF7CA2ABD2 /* CPTDerivedXYGraph.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DF9ECD50250FCD9114E2CA9BCFCD19E /* CPTDerivedXYGraph.m */; };
+		B249A672C7392C3844FEE3D98A33CD16 /* CPTGraphHostingView.h in Headers */ = {isa = PBXBuildFile; fileRef = 1D41066A84F7132ACCF75B5F20822E5C /* CPTGraphHostingView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B2730C21DDFEED1E2D97D227C94CBCCC /* CPTNumericData+TypeConversion.m in Sources */ = {isa = PBXBuildFile; fileRef = 523160531232BDCCC01FDBC409BC679B /* CPTNumericData+TypeConversion.m */; };
+		B555415D5D99FD653F98829A968F42DA /* CPTAxisLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = DB9CEB31BEC7A77444BD5784EF27B04D /* CPTAxisLabel.m */; };
+		B7E4A31BBFA724C456D7CB1EA67CA867 /* _CPTAnimationCGFloatPeriod.m in Sources */ = {isa = PBXBuildFile; fileRef = 84E7985F383202D534EC94F4E0BFCC1E /* _CPTAnimationCGFloatPeriod.m */; };
+		BACBEEA85BDEB43904507FAB696AE8F1 /* CPTNumericData+TypeConversion.h in Headers */ = {isa = PBXBuildFile; fileRef = CA7D2D1F54549BD0039E2FD21285984A /* CPTNumericData+TypeConversion.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BACEA1163FD9E9F76C8B5ED79D6D731A /* NSNumberExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 50BD4DC1211F42DDCB79702366E02AB4 /* NSNumberExtensions.m */; };
+		BDBDAA381BD33E1EECE2406724036E9B /* CPTAnimation.h in Headers */ = {isa = PBXBuildFile; fileRef = F04F1C69B863EA36BFD74D3E1D43B1BC /* CPTAnimation.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BDD7080C634B83CA0F177827A2E62F12 /* CPTTextLayer.h in Headers */ = {isa = PBXBuildFile; fileRef = 07E63EE3AABAA39761061E66DB9FFE63 /* CPTTextLayer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BE83539330A6C6504B3884CF41918649 /* _CPTFillGradient.h in Headers */ = {isa = PBXBuildFile; fileRef = 523FEB2C36E2C2BC308DF62DD4532919 /* _CPTFillGradient.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		BF9C4EA90AB70F45D41A1B4C916D03E3 /* CPTScatterPlot.h in Headers */ = {isa = PBXBuildFile; fileRef = 188832975D5CB1A36238F333B8C20751 /* CPTScatterPlot.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C07413B05F2A3CD997EBCE9D8EE5FD08 /* Compression.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15F0F3A99EEC993E2F84CEA0BE28B745 /* Compression.swift */; };
+		C0E0A92C94D661C7F6CED58D8226C790 /* CPTXYAxisSet.h in Headers */ = {isa = PBXBuildFile; fileRef = 2431ACD60F11D4F5EDE15723B3BA65D2 /* CPTXYAxisSet.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C17C0003914477AC6BBB1C4A87FE09E1 /* _CPTAnimationPlotRangePeriod.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D795A1D13108FA8F6B9BDD4A172C830 /* _CPTAnimationPlotRangePeriod.m */; };
+		C18296AD859F6082D351436CB594AD2B /* CPTBarPlot.h in Headers */ = {isa = PBXBuildFile; fileRef = B8C4180B83D128FE233B6E7E8A27BAE0 /* CPTBarPlot.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C20A1D3FD02E531F4AAF331E5E7F8B12 /* CPTMutablePlotRange.h in Headers */ = {isa = PBXBuildFile; fileRef = 1F61B0A506579A611270E2FE5E1A8E2C /* CPTMutablePlotRange.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C2479C0609F31654F25757EE9F30A26A /* CPTGraphHostingView.m in Sources */ = {isa = PBXBuildFile; fileRef = EE6BA94380DB82A75F774CAFF4738961 /* CPTGraphHostingView.m */; };
+		C2809B4763602D15A7384398343AE406 /* Transport.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9448CCD9291D4E70FEFA2F6031592C73 /* Transport.swift */; };
+		C28D57BB782780998FAB21707DA20DD8 /* CPTColorSpace.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B8A3E1770D971F742A550838ABAC21D /* CPTColorSpace.m */; };
+		C31ACA37E2775E41416305B2D4BB00B7 /* CPTLineStyle.h in Headers */ = {isa = PBXBuildFile; fileRef = 43C2B09461E0670AD746769E3A7F090D /* CPTLineStyle.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C427B8A005DE7C11E0505F37A312FD29 /* CPTPlot.m in Sources */ = {isa = PBXBuildFile; fileRef = E1B18C6B8D794FF590331EC5AB460D14 /* CPTPlot.m */; };
 		C57412A136734F2D7D6E837FC05B15E1 /* Pods-AirQualityMonitoringTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = E12CD7425E385E39201C144965A5B8FD /* Pods-AirQualityMonitoringTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		C808D0298CC1CD6C13E283663535B259 /* WebSocketServer.swift in Sources */ = {isa = PBXBuildFile; fileRef = A62AC07A9271D8996F97CC35856BA647 /* WebSocketServer.swift */; };
-		CCDFE079D2DA1E51162E69A3A28BF23F /* NativeEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56ADCC3B462E7AE2D80872C7A66CA4A7 /* NativeEngine.swift */; };
-		D14862BE161EA7E1D0D2B451C8C2BDA7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
-		DA25193E27ABCAC731A9549A566C5FDB /* FoundationHTTPHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AF39A541BA78B8472A0F9D4E3504B90 /* FoundationHTTPHandler.swift */; };
-		F4D86DAACC44D52F4580AD0721D10459 /* Security.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FC292255BA6A323D7D1C01215CC6591 /* Security.swift */; };
+		C58231FB1D28343EE336B07EC7589C1E /* Pods-AirQualityMonitoring-AirQualityMonitoringUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 9A4471B5A052FA7B49E0CA932884B774 /* Pods-AirQualityMonitoring-AirQualityMonitoringUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C5F16442A723BE4DC40782AEEA09382E /* CPTTimeFormatter.h in Headers */ = {isa = PBXBuildFile; fileRef = 1747776F5E9C22A7397D1EE116626270 /* CPTTimeFormatter.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C6C6EBC5F37D5FBB6AE8804AE08886DE /* CPTAnimationOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = DC2DA895BFCB56BEB566CC2308F9F7BE /* CPTAnimationOperation.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C808D0298CC1CD6C13E283663535B259 /* WebSocketServer.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCCA7E6C478DF416A457A000690E0DD4 /* WebSocketServer.swift */; };
+		C9B9606B1272E299F88DF960CFAF2962 /* _CPTStocksTheme.m in Sources */ = {isa = PBXBuildFile; fileRef = 1061338B6C4D2B548CF48D737CEDBDCA /* _CPTStocksTheme.m */; };
+		CA9DD94A2C0123DCBD9575398B82C701 /* Pods-AirQualityMonitoring-AirQualityMonitoringUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 28ED62573A12A9333F82458168E9650B /* Pods-AirQualityMonitoring-AirQualityMonitoringUITests-dummy.m */; };
+		CBB5F6A01214EC4017F79E21E845E638 /* CPTPlatformSpecificDefines.m in Sources */ = {isa = PBXBuildFile; fileRef = 4609D664E71044BDF8F007BE7AE318E9 /* CPTPlatformSpecificDefines.m */; };
+		CCC78776E5E038668519F83492ECF4D2 /* Pods-AirQualityMonitoring-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F9869BFE2BCA5B7B0B814C89BAEE0B90 /* Pods-AirQualityMonitoring-dummy.m */; };
+		CCDFE079D2DA1E51162E69A3A28BF23F /* NativeEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B9FF8568157710B4060E7001C8EED50 /* NativeEngine.swift */; };
+		CCFE94CDE367F09083B5F37C4B3E14F8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FDD2AF2EE71C229BC9C64692BE5DE6C2 /* Foundation.framework */; };
+		CE1735B819434035DB0B84A5E430A71E /* CPTPlotSpaceAnnotation.h in Headers */ = {isa = PBXBuildFile; fileRef = F6F3388A63982DEA4AB364E168BE0BC1 /* CPTPlotSpaceAnnotation.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D08D9BA007941EC227D86E0908A43B52 /* _CPTMaskLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 30F9BC7553298ED5BDF4637F34E2A2A5 /* _CPTMaskLayer.m */; };
+		D0DBABAC1E43C90B483F651BB6257B7C /* _CPTAnimationTimingFunctions.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FAECE8A7B22A0B6DB89606F2A5B8B1C /* _CPTAnimationTimingFunctions.m */; };
+		D142635F645453DBF3A19FA1D28E14B7 /* CPTPlotAreaFrame.m in Sources */ = {isa = PBXBuildFile; fileRef = EFB35B5570F2B7FCC9881DB6FF58F7B9 /* CPTPlotAreaFrame.m */; };
+		D14862BE161EA7E1D0D2B451C8C2BDA7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FDD2AF2EE71C229BC9C64692BE5DE6C2 /* Foundation.framework */; };
+		D265DB454546C9E8EDDD55F62C6830F9 /* CPTPlatformSpecificDefines.h in Headers */ = {isa = PBXBuildFile; fileRef = 08DA8E9945FC90CA4C810834D9641C98 /* CPTPlatformSpecificDefines.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D3CDE72A3D238FA689B5249BFA439C72 /* CPTColorSpace.h in Headers */ = {isa = PBXBuildFile; fileRef = 10399D2DEF169AFEA4678463C1488C4A /* CPTColorSpace.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D64457A0ED71F0C16D6848367A045483 /* CPTNumericData.m in Sources */ = {isa = PBXBuildFile; fileRef = A80F09C267D8530E97F5719691597D60 /* CPTNumericData.m */; };
+		D993AFA106BF03BCFB676BF705A46A1C /* CPTMutablePlotRange.m in Sources */ = {isa = PBXBuildFile; fileRef = 90F80413D768F279BF5DE2A1CD1D9CB4 /* CPTMutablePlotRange.m */; };
+		DA25193E27ABCAC731A9549A566C5FDB /* FoundationHTTPHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E3B81D0508A83DBF42213785309CC8F /* FoundationHTTPHandler.swift */; };
+		DA60F5CAC0FA5B0CDD9BDD2AFC303BA1 /* CPTScatterPlot.m in Sources */ = {isa = PBXBuildFile; fileRef = 197438E0435477E8884EFE28ED46B0EA /* CPTScatterPlot.m */; };
+		DB5576B87B9A69EE12CB401C930B9ED4 /* CPTGridLines.h in Headers */ = {isa = PBXBuildFile; fileRef = 46C9E2E1317854167512D742405CE47F /* CPTGridLines.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DC60E6B563CAF82DDB9A390C8AB4FB93 /* _CPTAnimationNSDecimalPeriod.h in Headers */ = {isa = PBXBuildFile; fileRef = 072EA5513916388700339D876906AE2E /* _CPTAnimationNSDecimalPeriod.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		DD76F81810AC3D7626CAD03B0467E6A8 /* CPTTimeFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BA90B0A618257D3318F08A5471DD36C /* CPTTimeFormatter.m */; };
+		DD7AE602ED748AC94E2776A7AB6FD612 /* CPTAxisSet.h in Headers */ = {isa = PBXBuildFile; fileRef = 7BD45F9BC74D210DA085E7706BDCF9BE /* CPTAxisSet.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DF3BB9BA146A88CEE577AF8406E350EE /* CPTGradient.m in Sources */ = {isa = PBXBuildFile; fileRef = 76E2880069458FEB2792539614B2E345 /* CPTGradient.m */; };
+		E10FB76B705FFB39EB4C06FB39477E0C /* _CPTConstraintsRelative.h in Headers */ = {isa = PBXBuildFile; fileRef = 6DF3193B4A3788B4DFFB2DC54EB5EFFA /* _CPTConstraintsRelative.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		E146B540F2C7373EE30F177550FF3C35 /* CPTPieChart.m in Sources */ = {isa = PBXBuildFile; fileRef = DD24C075FC0F4878A7054C5816EAC3D5 /* CPTPieChart.m */; };
+		E4B68DC04C7276E23A8E44A8DCF0D707 /* _CPTConstraintsFixed.h in Headers */ = {isa = PBXBuildFile; fileRef = E225772FEC7139340CFF1C56463213DA /* _CPTConstraintsFixed.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		E4B7C7E24D904A81FB2D8C9B10CE4B7C /* CPTLayer.h in Headers */ = {isa = PBXBuildFile; fileRef = 653A0C13CDB43A9ABBFB2D0D5943F2BF /* CPTLayer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E5804850318B527BB7FF824AE4B26ED2 /* CPTPlatformSpecificCategories.m in Sources */ = {isa = PBXBuildFile; fileRef = C63FE830124657D6F79A784EEBC265FE /* CPTPlatformSpecificCategories.m */; };
+		E5A2FC92B444C187EA38FB9A9FD728D3 /* CPTPlot.h in Headers */ = {isa = PBXBuildFile; fileRef = 8B03CB7DF5F46EC2AF2275DE09AA03EA /* CPTPlot.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E6F8830D9C2B988BB22912FDBF841BB2 /* CPTAxisTitle.m in Sources */ = {isa = PBXBuildFile; fileRef = 652F9BC8A385A2176FC92AB057C6304F /* CPTAxisTitle.m */; };
+		E703B64CC962A123933C9702A780D37C /* CPTNumericDataType.h in Headers */ = {isa = PBXBuildFile; fileRef = 90554DC56FB34888CA8ACC628CDF4121 /* CPTNumericDataType.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E782C24BB985A5F4BDED5B27F74AFB38 /* CPTPlotGroup.m in Sources */ = {isa = PBXBuildFile; fileRef = 110A663D6410D7FDD690761B2620CE90 /* CPTPlotGroup.m */; };
+		E8EBEF617CE46D40CF2511AE6DF5836C /* CPTMutableTextStyle.h in Headers */ = {isa = PBXBuildFile; fileRef = 90D6D12D6F57FCD71EC840A779B929C6 /* CPTMutableTextStyle.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EA2AAF01CD121669F7AD7FB42FB2A6C1 /* CPTXYPlotSpace.h in Headers */ = {isa = PBXBuildFile; fileRef = C4FE3445180F52DE08C12FC1C38C9253 /* CPTXYPlotSpace.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		ECD36874127A935FD6E6EB18AF5C090F /* CPTBarPlot.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A537E6E6ECDEC5C18D7369B8613D093 /* CPTBarPlot.m */; };
+		ECE891F3B07C3680998DB3348BDEA502 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FDD2AF2EE71C229BC9C64692BE5DE6C2 /* Foundation.framework */; };
+		ED8FA3F57C545C96C81419D81A498F31 /* CPTXYPlotSpace.m in Sources */ = {isa = PBXBuildFile; fileRef = EEB2DFCBE29DC741C7C84476C953F412 /* CPTXYPlotSpace.m */; };
+		EDC5AD83B5787364CD273E9A854F70C6 /* _CPTAnimationCGRectPeriod.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CF8B170C991B93467D98B59E544F276 /* _CPTAnimationCGRectPeriod.m */; };
+		EE326F6BC4322469AA4406BA90959822 /* CPTPathExtensions.h in Headers */ = {isa = PBXBuildFile; fileRef = 1EAA52F0DC2D03420F1DE0837DA9EF6E /* CPTPathExtensions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EEB93D508BCEA0B61B22E186A2062A08 /* CPTPlotRange.h in Headers */ = {isa = PBXBuildFile; fileRef = C367D6DD6F0CA45BFC27348B04FC6CCA /* CPTPlotRange.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EF1CE9844C507E151C72DDECBAD98150 /* CPTPlatformSpecificCategories.h in Headers */ = {isa = PBXBuildFile; fileRef = 557DED9F86C2122D3E40568817DDDB09 /* CPTPlatformSpecificCategories.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F1653427F6F4F75819BC1A378BBB247C /* CPTResponder.h in Headers */ = {isa = PBXBuildFile; fileRef = 719EEF86985BE6F1870E26E2C2F381FF /* CPTResponder.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F27289BE2936C0B26649778F9910CFFB /* _CPTFillColor.h in Headers */ = {isa = PBXBuildFile; fileRef = B224676E658AC9B2E76645CA412EC39C /* _CPTFillColor.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		F381D8587898441A09CEEE49E1CCD44D /* CorePlot-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = E7B1B8826F781A9AC975549BDA3B2605 /* CorePlot-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F4D86DAACC44D52F4580AD0721D10459 /* Security.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0ECCA16F6B44471537D0B2ED4ABFDFE /* Security.swift */; };
+		F4F259FDBB29CE5EE3AF563AE12AB049 /* CPTPlotGroup.h in Headers */ = {isa = PBXBuildFile; fileRef = 9219C81EC75E3F2DF4980723BD304CA6 /* CPTPlotGroup.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F8DB27770E0FDE65025CDB71762BC10B /* CPTTextStyle.h in Headers */ = {isa = PBXBuildFile; fileRef = EC1B0AD0B27F7C07714E4A9827651676 /* CPTTextStyle.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F8E4CEC77E275B7A3A6B91D0E8F7335B /* CPTMutableTextStyle.m in Sources */ = {isa = PBXBuildFile; fileRef = 55088B7E9045CDD3A7FE39F878CD332F /* CPTMutableTextStyle.m */; };
+		FF41D0DEB17575D290A2EB83245DF414 /* CPTFunctionDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 736555D3C35EBE43C52A26FC38BBB086 /* CPTFunctionDataSource.m */; };
+		FFBA5DBD14DC5279EA09F9D8EF9F9698 /* CPTTradingRangePlot.m in Sources */ = {isa = PBXBuildFile; fileRef = 65AC9E90EE8FC8803F5AE6FF989C2619 /* CPTTradingRangePlot.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		14EA98980D85D0AB7984ABA554F196F6 /* PBXContainerItemProxy */ = {
+		3E858F09E0C90720830416BD641540E7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9B78EE4AF6AE03E79D88886319853FF7;
+			remoteInfo = Starscream;
+		};
+		6110CA1B96D33D1AA50E5410BA3EE3E4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 03DD7CB0D843ACA94CB5F68975736BB9;
+			remoteInfo = CorePlot;
+		};
+		7E59306DC805C32147820D6E1595ADB5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9B78EE4AF6AE03E79D88886319853FF7;
+			remoteInfo = Starscream;
+		};
+		ABEBD96AD48D55C8AC2F3976BF158A6F /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = FB8F5453EEF454EA29D075BE69815BAB;
 			remoteInfo = "Pods-AirQualityMonitoring";
 		};
-		1F1EA792129E76762628CF54B55E99BF /* PBXContainerItemProxy */ = {
+		CE955A21D07E8D551BE1E153A66358EF /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 9B78EE4AF6AE03E79D88886319853FF7;
-			remoteInfo = Starscream;
-		};
-		ECECA0E8B61405FD590D1229500E152A /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 9B78EE4AF6AE03E79D88886319853FF7;
-			remoteInfo = Starscream;
+			remoteGlobalIDString = 03DD7CB0D843ACA94CB5F68975736BB9;
+			remoteInfo = CorePlot;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		010F5C43A348BC3C417C21FA354444E2 /* Starscream-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Starscream-prefix.pch"; sourceTree = "<group>"; };
+		004AF9DA0E2F64AAACD6851775DD9780 /* CPTBorderedLayer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CPTBorderedLayer.h; path = framework/Source/CPTBorderedLayer.h; sourceTree = "<group>"; };
 		042DA7649FD7FC3D3B302028306615D9 /* Pods-AirQualityMonitoringTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-AirQualityMonitoringTests.release.xcconfig"; sourceTree = "<group>"; };
+		06F8D0C461886DF20BD901B0AD386318 /* _CPTConstraintsRelative.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = _CPTConstraintsRelative.m; path = framework/Source/_CPTConstraintsRelative.m; sourceTree = "<group>"; };
+		072EA5513916388700339D876906AE2E /* _CPTAnimationNSDecimalPeriod.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = _CPTAnimationNSDecimalPeriod.h; path = framework/Source/_CPTAnimationNSDecimalPeriod.h; sourceTree = "<group>"; };
+		07E63EE3AABAA39761061E66DB9FFE63 /* CPTTextLayer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CPTTextLayer.h; path = framework/Source/CPTTextLayer.h; sourceTree = "<group>"; };
 		07F83C6878426FD500ADC982A33E0D9E /* Pods-AirQualityMonitoring-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-AirQualityMonitoring-Info.plist"; sourceTree = "<group>"; };
+		07FC814E02145FE096D7D671C0F123AA /* NSCoderExtensions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = NSCoderExtensions.m; path = framework/Source/NSCoderExtensions.m; sourceTree = "<group>"; };
+		08DA8E9945FC90CA4C810834D9641C98 /* CPTPlatformSpecificDefines.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CPTPlatformSpecificDefines.h; path = framework/iPhoneOnly/CPTPlatformSpecificDefines.h; sourceTree = "<group>"; };
+		0B50890E9A7992912625F3CF54100347 /* CPTMutableLineStyle.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CPTMutableLineStyle.m; path = framework/Source/CPTMutableLineStyle.m; sourceTree = "<group>"; };
+		0B8A3E1770D971F742A550838ABAC21D /* CPTColorSpace.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CPTColorSpace.m; path = framework/Source/CPTColorSpace.m; sourceTree = "<group>"; };
+		0CF8B170C991B93467D98B59E544F276 /* _CPTAnimationCGRectPeriod.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = _CPTAnimationCGRectPeriod.m; path = framework/Source/_CPTAnimationCGRectPeriod.m; sourceTree = "<group>"; };
+		0DDDFED6828BB652A9CD85E3F3977583 /* CPTAnimationPeriod.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CPTAnimationPeriod.h; path = framework/Source/CPTAnimationPeriod.h; sourceTree = "<group>"; };
+		0DF9ECD50250FCD9114E2CA9BCFCD19E /* CPTDerivedXYGraph.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CPTDerivedXYGraph.m; path = framework/Source/CPTDerivedXYGraph.m; sourceTree = "<group>"; };
+		0E6B58FFCCA567921CE3761B89F22E45 /* _CPTXYTheme.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = _CPTXYTheme.m; path = framework/Source/_CPTXYTheme.m; sourceTree = "<group>"; };
+		10399D2DEF169AFEA4678463C1488C4A /* CPTColorSpace.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CPTColorSpace.h; path = framework/Source/CPTColorSpace.h; sourceTree = "<group>"; };
+		1061338B6C4D2B548CF48D737CEDBDCA /* _CPTStocksTheme.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = _CPTStocksTheme.m; path = framework/Source/_CPTStocksTheme.m; sourceTree = "<group>"; };
+		10ED658E5BAD9DC529905F77D4C8CCEE /* CPTMutableNumericData.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CPTMutableNumericData.m; path = framework/Source/CPTMutableNumericData.m; sourceTree = "<group>"; };
+		10F327ECF2BF6D5D0E847B5133E41020 /* CPTPieChart.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CPTPieChart.h; path = framework/Source/CPTPieChart.h; sourceTree = "<group>"; };
+		110A663D6410D7FDD690761B2620CE90 /* CPTPlotGroup.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CPTPlotGroup.m; path = framework/Source/CPTPlotGroup.m; sourceTree = "<group>"; };
+		11917B00DC71A5727BC16A1FF1376442 /* Starscream-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Starscream-dummy.m"; sourceTree = "<group>"; };
 		13B30945390292450053231001C4522A /* Pods-AirQualityMonitoring-AirQualityMonitoringUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-AirQualityMonitoring-AirQualityMonitoringUITests.modulemap"; sourceTree = "<group>"; };
 		140CA310909514807CC27F0F69E4CF8B /* Pods-AirQualityMonitoring-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-AirQualityMonitoring-acknowledgements.plist"; sourceTree = "<group>"; };
-		1454E39E11FD28A611495E03B2015FD4 /* Framer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Framer.swift; path = Sources/Framer/Framer.swift; sourceTree = "<group>"; };
+		1471B3F4520F599B224B371F797B75CA /* CPTImagePlatformSpecific.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CPTImagePlatformSpecific.m; path = framework/iPhoneOnly/CPTImagePlatformSpecific.m; sourceTree = "<group>"; };
+		15F0F3A99EEC993E2F84CEA0BE28B745 /* Compression.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Compression.swift; path = Sources/Compression/Compression.swift; sourceTree = "<group>"; };
+		15F8FD95D3469D692B706206F7DF9763 /* _CPTAnimationNSNumberPeriod.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = _CPTAnimationNSNumberPeriod.m; path = framework/Source/_CPTAnimationNSNumberPeriod.m; sourceTree = "<group>"; };
+		16000206B11AB5012ACAA993ECBE9B0F /* CPTExceptions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CPTExceptions.h; path = framework/Source/CPTExceptions.h; sourceTree = "<group>"; };
 		16B71FBA71951F37D1AA4680C640B5EA /* Pods-AirQualityMonitoring-AirQualityMonitoringUITests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-AirQualityMonitoring-AirQualityMonitoringUITests-Info.plist"; sourceTree = "<group>"; };
-		16D70531198624C7D8B14FF91C62FF6B /* StringHTTPHandler.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = StringHTTPHandler.swift; path = Sources/Framer/StringHTTPHandler.swift; sourceTree = "<group>"; };
-		1918C09D193EF7F62A7C2611F12AC44B /* WSCompression.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = WSCompression.swift; path = Sources/Compression/WSCompression.swift; sourceTree = "<group>"; };
+		16FFFC367176111BD5D09734B639D442 /* WSCompression.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = WSCompression.swift; path = Sources/Compression/WSCompression.swift; sourceTree = "<group>"; };
+		1747776F5E9C22A7397D1EE116626270 /* CPTTimeFormatter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CPTTimeFormatter.h; path = framework/Source/CPTTimeFormatter.h; sourceTree = "<group>"; };
+		188832975D5CB1A36238F333B8C20751 /* CPTScatterPlot.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CPTScatterPlot.h; path = framework/Source/CPTScatterPlot.h; sourceTree = "<group>"; };
+		18CD6B118FFB804A22F3594356A5F8DC /* CPTPlatformSpecificFunctions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CPTPlatformSpecificFunctions.h; path = framework/iPhoneOnly/CPTPlatformSpecificFunctions.h; sourceTree = "<group>"; };
+		197438E0435477E8884EFE28ED46B0EA /* CPTScatterPlot.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CPTScatterPlot.m; path = framework/Source/CPTScatterPlot.m; sourceTree = "<group>"; };
 		1A151679C546CE14EC971F12E0D1F51C /* Pods-AirQualityMonitoring-AirQualityMonitoringUITests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-AirQualityMonitoring-AirQualityMonitoringUITests-frameworks.sh"; sourceTree = "<group>"; };
+		1AD571D53C6E2085B82B9053911FE967 /* CPTGridLineGroup.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CPTGridLineGroup.h; path = framework/Source/CPTGridLineGroup.h; sourceTree = "<group>"; };
+		1AF311013A54858ACFE612B60E1B9225 /* CPTPlotSymbol.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CPTPlotSymbol.m; path = framework/Source/CPTPlotSymbol.m; sourceTree = "<group>"; };
+		1B04E20F029B83C58E4E3104531FC887 /* _CPTFillImage.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = _CPTFillImage.m; path = framework/Source/_CPTFillImage.m; sourceTree = "<group>"; };
 		1B6C6444C21EE7D98F7A3ACD67A44A23 /* Pods-AirQualityMonitoringTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-AirQualityMonitoringTests-dummy.m"; sourceTree = "<group>"; };
+		1BBAF72B136B696988D3CCD680B29A0F /* CPTAnimation.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CPTAnimation.m; path = framework/Source/CPTAnimation.m; sourceTree = "<group>"; };
+		1C9C9D06B56D143C02EA750C9242CBC5 /* CPTTheme.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CPTTheme.h; path = framework/Source/CPTTheme.h; sourceTree = "<group>"; };
+		1D41066A84F7132ACCF75B5F20822E5C /* CPTGraphHostingView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CPTGraphHostingView.h; path = framework/iPhoneOnly/CPTGraphHostingView.h; sourceTree = "<group>"; };
+		1D64D2E424B4B8913258281AEAA7144C /* CPTXYAxis.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CPTXYAxis.m; path = framework/Source/CPTXYAxis.m; sourceTree = "<group>"; };
 		1D847A05DAF7E640A4D527F179B9995C /* Pods-AirQualityMonitoringTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-AirQualityMonitoringTests.modulemap"; sourceTree = "<group>"; };
-		21B65F09370A4D9877255EC1C47060A2 /* Starscream-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Starscream-dummy.m"; sourceTree = "<group>"; };
+		1EAA52F0DC2D03420F1DE0837DA9EF6E /* CPTPathExtensions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CPTPathExtensions.h; path = framework/Source/CPTPathExtensions.h; sourceTree = "<group>"; };
+		1F49ADF4A32D91FFF0710D083ED18CE1 /* CorePlot-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "CorePlot-dummy.m"; sourceTree = "<group>"; };
+		1F569181B7B708183DD1D937479ED580 /* CPTAxis.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CPTAxis.m; path = framework/Source/CPTAxis.m; sourceTree = "<group>"; };
+		1F61B0A506579A611270E2FE5E1A8E2C /* CPTMutablePlotRange.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CPTMutablePlotRange.h; path = framework/Source/CPTMutablePlotRange.h; sourceTree = "<group>"; };
+		2063E3205F0D6D01B9FDA20D7B6C3A79 /* CPTPlotArea.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CPTPlotArea.m; path = framework/Source/CPTPlotArea.m; sourceTree = "<group>"; };
+		20CB54828C812F538D2CD10322CDF306 /* CPTLegend.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CPTLegend.m; path = framework/Source/CPTLegend.m; sourceTree = "<group>"; };
+		230E341DB61730C2E54E33082BD78B68 /* CPTMutableNumericData.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CPTMutableNumericData.h; path = framework/Source/CPTMutableNumericData.h; sourceTree = "<group>"; };
+		2431ACD60F11D4F5EDE15723B3BA65D2 /* CPTXYAxisSet.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CPTXYAxisSet.h; path = framework/Source/CPTXYAxisSet.h; sourceTree = "<group>"; };
 		255C97B1C28CE49E5535827D56ABA929 /* Pods-AirQualityMonitoringTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-AirQualityMonitoringTests.debug.xcconfig"; sourceTree = "<group>"; };
+		2572ECF5A87BF09EE7AB1D00620725CA /* NSCoderExtensions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = NSCoderExtensions.h; path = framework/Source/NSCoderExtensions.h; sourceTree = "<group>"; };
 		26CFE68DF3B498BA314FBA8F776778C3 /* Pods-AirQualityMonitoring-AirQualityMonitoringUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-AirQualityMonitoring-AirQualityMonitoringUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		2837AF461A835740510F9FF3643EC329 /* TCPTransport.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TCPTransport.swift; path = Sources/Transport/TCPTransport.swift; sourceTree = "<group>"; };
 		28ED62573A12A9333F82458168E9650B /* Pods-AirQualityMonitoring-AirQualityMonitoringUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-AirQualityMonitoring-AirQualityMonitoringUITests-dummy.m"; sourceTree = "<group>"; };
-		2C1CF04602B9D61F89BCC51DEA7939B0 /* Starscream.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Starscream.debug.xcconfig; sourceTree = "<group>"; };
+		29A2948CE20116410C2787547D839A37 /* _CPTAnimationCGRectPeriod.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = _CPTAnimationCGRectPeriod.h; path = framework/Source/_CPTAnimationCGRectPeriod.h; sourceTree = "<group>"; };
+		2B86A04DB986490BF058A93AE24675BF /* CPTDefinitions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CPTDefinitions.h; path = framework/Source/CPTDefinitions.h; sourceTree = "<group>"; };
+		2CC871AF740B96534E0C020E55B5BC80 /* CPTMutableNumericData+TypeConversion.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "CPTMutableNumericData+TypeConversion.m"; path = "framework/Source/CPTMutableNumericData+TypeConversion.m"; sourceTree = "<group>"; };
+		2EAFBCB05DB8541F7FA49FE2C0E3A738 /* CPTTheme.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CPTTheme.m; path = framework/Source/CPTTheme.m; sourceTree = "<group>"; };
+		2F29668C38D2792EFDD11304220AA024 /* CPTColor.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CPTColor.h; path = framework/Source/CPTColor.h; sourceTree = "<group>"; };
+		2FFD743B90A56416E3F9A7EE1087FA01 /* _CPTDarkGradientTheme.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = _CPTDarkGradientTheme.m; path = framework/Source/_CPTDarkGradientTheme.m; sourceTree = "<group>"; };
 		30C46BC14D6B9ED079B144405A4BD601 /* Pods-AirQualityMonitoring-AirQualityMonitoringUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-AirQualityMonitoring-AirQualityMonitoringUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		35ED0E33A6DD024AC0E71FEF3EA74D7C /* HTTPHandler.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HTTPHandler.swift; path = Sources/Framer/HTTPHandler.swift; sourceTree = "<group>"; };
-		37C291A02C054326B5C6022EACD814E4 /* FrameCollector.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FrameCollector.swift; path = Sources/Framer/FrameCollector.swift; sourceTree = "<group>"; };
-		3AF39A541BA78B8472A0F9D4E3504B90 /* FoundationHTTPHandler.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FoundationHTTPHandler.swift; path = Sources/Framer/FoundationHTTPHandler.swift; sourceTree = "<group>"; };
-		3D7E34251E9353A38AC748BB94EDC575 /* FoundationTransport.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FoundationTransport.swift; path = Sources/Transport/FoundationTransport.swift; sourceTree = "<group>"; };
+		30F9BC7553298ED5BDF4637F34E2A2A5 /* _CPTMaskLayer.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = _CPTMaskLayer.m; path = framework/Source/_CPTMaskLayer.m; sourceTree = "<group>"; };
+		33987970F310BA8F7667306161B29C5B /* CPTMutableNumericData+TypeConversion.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "CPTMutableNumericData+TypeConversion.h"; path = "framework/Source/CPTMutableNumericData+TypeConversion.h"; sourceTree = "<group>"; };
+		350541B8813F45F1E2DEFC5F1A7DF987 /* _CPTAnimationCGFloatPeriod.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = _CPTAnimationCGFloatPeriod.h; path = framework/Source/_CPTAnimationCGFloatPeriod.h; sourceTree = "<group>"; };
+		35A775F8BCF5BDAFC5ECA3BA094FF086 /* NSDecimalNumberExtensions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = NSDecimalNumberExtensions.h; path = framework/Source/NSDecimalNumberExtensions.h; sourceTree = "<group>"; };
+		372D67E92165759A694F9328750F1206 /* CPTAxisTitle.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CPTAxisTitle.h; path = framework/Source/CPTAxisTitle.h; sourceTree = "<group>"; };
+		39C22DF728D16C092AE49D28584C31AD /* CPTCalendarFormatter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CPTCalendarFormatter.h; path = framework/Source/CPTCalendarFormatter.h; sourceTree = "<group>"; };
+		3A7791D7682FB891B2214FA9DA78BF4F /* _CPTAnimationCGSizePeriod.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = _CPTAnimationCGSizePeriod.m; path = framework/Source/_CPTAnimationCGSizePeriod.m; sourceTree = "<group>"; };
+		3BC06715528EFD3B80788B24BA408994 /* CPTGraph.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CPTGraph.m; path = framework/Source/CPTGraph.m; sourceTree = "<group>"; };
 		406B6311BD9161B213ABB8BC8C8B65C5 /* Pods-AirQualityMonitoring-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-AirQualityMonitoring-acknowledgements.markdown"; sourceTree = "<group>"; };
+		40906B24AC791C57453AA3919B529D17 /* CorePlot-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "CorePlot-Info.plist"; sourceTree = "<group>"; };
+		40EF585837E868EA04AD01BAE747EA01 /* CPTNumericData.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CPTNumericData.h; path = framework/Source/CPTNumericData.h; sourceTree = "<group>"; };
+		415439A9C9631F69908F40B2F17CC195 /* CPTConstraints.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CPTConstraints.h; path = framework/Source/CPTConstraints.h; sourceTree = "<group>"; };
+		42E588A4C27CCB4CF6E6D37DEA4F051D /* CorePlot-CocoaTouch.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "CorePlot-CocoaTouch.h"; path = "framework/CorePlot-CocoaTouch.h"; sourceTree = "<group>"; };
+		4319F244ACD391125C89E645D806D792 /* CPTLayerAnnotation.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CPTLayerAnnotation.m; path = framework/Source/CPTLayerAnnotation.m; sourceTree = "<group>"; };
+		43B192F76BDF5DBC3716C36559300367 /* CorePlot.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CorePlot.h; path = framework/CocoaPods/CorePlot.h; sourceTree = "<group>"; };
+		43C2B09461E0670AD746769E3A7F090D /* CPTLineStyle.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CPTLineStyle.h; path = framework/Source/CPTLineStyle.h; sourceTree = "<group>"; };
+		44065E4221DAFA49904113EB5D5FFA01 /* CPTGradient.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CPTGradient.h; path = framework/Source/CPTGradient.h; sourceTree = "<group>"; };
+		45E34BCDF705EA3EC82A2B7074E0C260 /* CPTAxisSet.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CPTAxisSet.m; path = framework/Source/CPTAxisSet.m; sourceTree = "<group>"; };
+		4609D664E71044BDF8F007BE7AE318E9 /* CPTPlatformSpecificDefines.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CPTPlatformSpecificDefines.m; path = framework/iPhoneOnly/CPTPlatformSpecificDefines.m; sourceTree = "<group>"; };
+		46C9E2E1317854167512D742405CE47F /* CPTGridLines.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CPTGridLines.h; path = framework/Source/CPTGridLines.h; sourceTree = "<group>"; };
+		48EC21CA67A9EC0E4D8F784B6F093643 /* _CPTDarkGradientTheme.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = _CPTDarkGradientTheme.h; path = framework/Source/_CPTDarkGradientTheme.h; sourceTree = "<group>"; };
+		4957BCECC49B7B04F6A63FBF2729599D /* Data+Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Data+Extensions.swift"; path = "Sources/DataBytes/Data+Extensions.swift"; sourceTree = "<group>"; };
 		49E0D94BB49052AABB99130316C0AF24 /* Pods_AirQualityMonitoring_AirQualityMonitoringUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_AirQualityMonitoring_AirQualityMonitoringUITests.framework; path = "Pods-AirQualityMonitoring-AirQualityMonitoringUITests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		4A0925310BE76B051E1B51E7FBB37F35 /* Engine.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Engine.swift; path = Sources/Engine/Engine.swift; sourceTree = "<group>"; };
-		4D2727BA14E02E7210DD6B547EA7D394 /* WebSocket.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = WebSocket.swift; path = Sources/Starscream/WebSocket.swift; sourceTree = "<group>"; };
-		4FC292255BA6A323D7D1C01215CC6591 /* Security.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Security.swift; path = Sources/Security/Security.swift; sourceTree = "<group>"; };
+		4C1C3C5ADDA967A8C4193A25CA2D6E23 /* CPTPathExtensions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CPTPathExtensions.m; path = framework/Source/CPTPathExtensions.m; sourceTree = "<group>"; };
+		4DED6B4D1DAA276529B5B34874D70019 /* FoundationTransport.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FoundationTransport.swift; path = Sources/Transport/FoundationTransport.swift; sourceTree = "<group>"; };
+		4E85184202E471D0C76DC41C9FFC42DD /* _CPTAnimationCGSizePeriod.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = _CPTAnimationCGSizePeriod.h; path = framework/Source/_CPTAnimationCGSizePeriod.h; sourceTree = "<group>"; };
+		4FAECE8A7B22A0B6DB89606F2A5B8B1C /* _CPTAnimationTimingFunctions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = _CPTAnimationTimingFunctions.m; path = framework/Source/_CPTAnimationTimingFunctions.m; sourceTree = "<group>"; };
+		50BD4DC1211F42DDCB79702366E02AB4 /* NSNumberExtensions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = NSNumberExtensions.m; path = framework/Source/NSNumberExtensions.m; sourceTree = "<group>"; };
+		50EBCC622F786B30D5DB250838BA9C7A /* CPTLegendEntry.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CPTLegendEntry.m; path = framework/Source/CPTLegendEntry.m; sourceTree = "<group>"; };
+		51099A0A0275EE2E30385A2DC7122949 /* NSDecimalNumberExtensions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = NSDecimalNumberExtensions.m; path = framework/Source/NSDecimalNumberExtensions.m; sourceTree = "<group>"; };
+		523160531232BDCCC01FDBC409BC679B /* CPTNumericData+TypeConversion.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "CPTNumericData+TypeConversion.m"; path = "framework/Source/CPTNumericData+TypeConversion.m"; sourceTree = "<group>"; };
+		523FEB2C36E2C2BC308DF62DD4532919 /* _CPTFillGradient.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = _CPTFillGradient.h; path = framework/Source/_CPTFillGradient.h; sourceTree = "<group>"; };
+		53963486A1AFAC0D1FB30D50DFFC6710 /* _CPTBorderLayer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = _CPTBorderLayer.h; path = framework/Source/_CPTBorderLayer.h; sourceTree = "<group>"; };
 		53E1151C8ECE53E8D0F875BB7723A399 /* Pods-AirQualityMonitoring-AirQualityMonitoringUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-AirQualityMonitoring-AirQualityMonitoringUITests.release.xcconfig"; sourceTree = "<group>"; };
-		56ADCC3B462E7AE2D80872C7A66CA4A7 /* NativeEngine.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NativeEngine.swift; path = Sources/Engine/NativeEngine.swift; sourceTree = "<group>"; };
-		56CCA8582A00BBFBC2E9AFFC1C1D53A9 /* TCPTransport.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TCPTransport.swift; path = Sources/Transport/TCPTransport.swift; sourceTree = "<group>"; };
-		5831A57C2E79638C447411ED69EB6C42 /* FoundationSecurity.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FoundationSecurity.swift; path = Sources/Security/FoundationSecurity.swift; sourceTree = "<group>"; };
+		55088B7E9045CDD3A7FE39F878CD332F /* CPTMutableTextStyle.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CPTMutableTextStyle.m; path = framework/Source/CPTMutableTextStyle.m; sourceTree = "<group>"; };
+		557DED9F86C2122D3E40568817DDDB09 /* CPTPlatformSpecificCategories.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CPTPlatformSpecificCategories.h; path = framework/iPhoneOnly/CPTPlatformSpecificCategories.h; sourceTree = "<group>"; };
+		577EB4392680F466D0F977155D9FC409 /* CPTAnnotationHostLayer.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CPTAnnotationHostLayer.m; path = framework/Source/CPTAnnotationHostLayer.m; sourceTree = "<group>"; };
+		579534C290E328B908EA02D5ED47D2EA /* CPTPlotAreaFrame.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CPTPlotAreaFrame.h; path = framework/Source/CPTPlotAreaFrame.h; sourceTree = "<group>"; };
+		589CF44B7745C175B7DE93C9390406C7 /* Starscream-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Starscream-umbrella.h"; sourceTree = "<group>"; };
+		592E2AF390535600197199B8422FC5ED /* _CPTAnimationPlotRangePeriod.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = _CPTAnimationPlotRangePeriod.h; path = framework/Source/_CPTAnimationPlotRangePeriod.h; sourceTree = "<group>"; };
+		59927E6581FE303E27E6E110730D647A /* WSEngine.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = WSEngine.swift; path = Sources/Engine/WSEngine.swift; sourceTree = "<group>"; };
+		5B3420A4802B3C81C6FE2A5113BC0DD9 /* Starscream-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Starscream-Info.plist"; sourceTree = "<group>"; };
+		5CC44E60941435A5B3BCEF4C73FE36E5 /* CPTPlotSpace.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CPTPlotSpace.m; path = framework/Source/CPTPlotSpace.m; sourceTree = "<group>"; };
+		5CEBFC58A90FCE017E5E2C8F68C076CD /* FoundationHTTPServerHandler.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FoundationHTTPServerHandler.swift; path = Sources/Framer/FoundationHTTPServerHandler.swift; sourceTree = "<group>"; };
+		60213CD21F8A66F454C20F01EBCF4422 /* _CPTPlainBlackTheme.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = _CPTPlainBlackTheme.h; path = framework/Source/_CPTPlainBlackTheme.h; sourceTree = "<group>"; };
+		62E4FA419493C6F68FC6435E25CD8B4B /* Engine.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Engine.swift; path = Sources/Engine/Engine.swift; sourceTree = "<group>"; };
+		643A281E5F12F8FDAEB1C75E0363AF2D /* CPTShadow.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CPTShadow.m; path = framework/Source/CPTShadow.m; sourceTree = "<group>"; };
+		652F9BC8A385A2176FC92AB057C6304F /* CPTAxisTitle.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CPTAxisTitle.m; path = framework/Source/CPTAxisTitle.m; sourceTree = "<group>"; };
+		653A0C13CDB43A9ABBFB2D0D5943F2BF /* CPTLayer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CPTLayer.h; path = framework/Source/CPTLayer.h; sourceTree = "<group>"; };
+		65AC9E90EE8FC8803F5AE6FF989C2619 /* CPTTradingRangePlot.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CPTTradingRangePlot.m; path = framework/Source/CPTTradingRangePlot.m; sourceTree = "<group>"; };
+		674A8F1440B8350C87F3187B2FEFE09B /* _CPTMaskLayer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = _CPTMaskLayer.h; path = framework/Source/_CPTMaskLayer.h; sourceTree = "<group>"; };
+		679A79F2819982E6A0A7399FFE59F58D /* CPTAnimationOperation.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CPTAnimationOperation.m; path = framework/Source/CPTAnimationOperation.m; sourceTree = "<group>"; };
 		6A422F4BBEBA5B55508D28C006B9EB36 /* Pods-AirQualityMonitoringTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-AirQualityMonitoringTests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		6AFF15B04F4B6AE9B2CE68EDDA1C773B /* _CPTPlainWhiteTheme.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = _CPTPlainWhiteTheme.h; path = framework/Source/_CPTPlainWhiteTheme.h; sourceTree = "<group>"; };
+		6B9FF8568157710B4060E7001C8EED50 /* NativeEngine.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NativeEngine.swift; path = Sources/Engine/NativeEngine.swift; sourceTree = "<group>"; };
+		6BB22CDE4143C5E50585CDCEA14CFBE7 /* CPTAnnotationHostLayer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CPTAnnotationHostLayer.h; path = framework/Source/CPTAnnotationHostLayer.h; sourceTree = "<group>"; };
+		6BF306DCAFFD82D2794BDFEEE6554AC0 /* CPTXYAxis.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CPTXYAxis.h; path = framework/Source/CPTXYAxis.h; sourceTree = "<group>"; };
 		6D14240BDA5EB2B16B829CBEAE21DF9D /* Pods_AirQualityMonitoringTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_AirQualityMonitoringTests.framework; path = "Pods-AirQualityMonitoringTests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		7175E21DED4337E7BBD3EF7424F315F6 /* Data+Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Data+Extensions.swift"; path = "Sources/DataBytes/Data+Extensions.swift"; sourceTree = "<group>"; };
+		6DF3193B4A3788B4DFFB2DC54EB5EFFA /* _CPTConstraintsRelative.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = _CPTConstraintsRelative.h; path = framework/Source/_CPTConstraintsRelative.h; sourceTree = "<group>"; };
+		6E3B81D0508A83DBF42213785309CC8F /* FoundationHTTPHandler.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FoundationHTTPHandler.swift; path = Sources/Framer/FoundationHTTPHandler.swift; sourceTree = "<group>"; };
+		701B25CD3640F588F45A107EA57A051D /* CPTPlotArea.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CPTPlotArea.h; path = framework/Source/CPTPlotArea.h; sourceTree = "<group>"; };
+		719A45D884FB2F59F5F929D05118587C /* CPTTradingRangePlot.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CPTTradingRangePlot.h; path = framework/Source/CPTTradingRangePlot.h; sourceTree = "<group>"; };
+		719EEF86985BE6F1870E26E2C2F381FF /* CPTResponder.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CPTResponder.h; path = framework/Source/CPTResponder.h; sourceTree = "<group>"; };
 		723343D3F9452FDABD0B47BCEFB40A50 /* Pods-AirQualityMonitoring-AirQualityMonitoringUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-AirQualityMonitoring-AirQualityMonitoringUITests-acknowledgements.plist"; sourceTree = "<group>"; };
-		73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		736555D3C35EBE43C52A26FC38BBB086 /* CPTFunctionDataSource.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CPTFunctionDataSource.m; path = framework/Source/CPTFunctionDataSource.m; sourceTree = "<group>"; };
+		76E2880069458FEB2792539614B2E345 /* CPTGradient.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CPTGradient.m; path = framework/Source/CPTGradient.m; sourceTree = "<group>"; };
+		776E32F84FBFF8EED4BB01B43FBED76A /* CPTPlotSymbol.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CPTPlotSymbol.h; path = framework/Source/CPTPlotSymbol.h; sourceTree = "<group>"; };
+		79CBD7A1E3357A343812BA83CAE5E0E9 /* FrameCollector.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FrameCollector.swift; path = Sources/Framer/FrameCollector.swift; sourceTree = "<group>"; };
+		7A537E6E6ECDEC5C18D7369B8613D093 /* CPTBarPlot.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CPTBarPlot.m; path = framework/Source/CPTBarPlot.m; sourceTree = "<group>"; };
+		7A69805FC342317ED895BD8FF752FB37 /* CPTAxis.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CPTAxis.h; path = framework/Source/CPTAxis.h; sourceTree = "<group>"; };
+		7BB589CF5C4121B92C0460DD6AD3D932 /* CPTNumericDataType.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CPTNumericDataType.m; path = framework/Source/CPTNumericDataType.m; sourceTree = "<group>"; };
+		7BC01E9BDD6991ACC6F48F6E7231A268 /* CPTDefinitions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CPTDefinitions.m; path = framework/Source/CPTDefinitions.m; sourceTree = "<group>"; };
+		7BD45F9BC74D210DA085E7706BDCF9BE /* CPTAxisSet.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CPTAxisSet.h; path = framework/Source/CPTAxisSet.h; sourceTree = "<group>"; };
+		7D795A1D13108FA8F6B9BDD4A172C830 /* _CPTAnimationPlotRangePeriod.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = _CPTAnimationPlotRangePeriod.m; path = framework/Source/_CPTAnimationPlotRangePeriod.m; sourceTree = "<group>"; };
 		81D862B9ADBD3A0CD302E68F77487EF0 /* Pods-AirQualityMonitoring.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-AirQualityMonitoring.debug.xcconfig"; sourceTree = "<group>"; };
-		81F95157FC4CC8593A1B1E4607562122 /* FoundationHTTPServerHandler.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FoundationHTTPServerHandler.swift; path = Sources/Framer/FoundationHTTPServerHandler.swift; sourceTree = "<group>"; };
-		85C44A9AB6F12498BFC8233B9D599206 /* Starscream-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Starscream-Info.plist"; sourceTree = "<group>"; };
+		821AB191B36E13DA4573A5DB77B5B497 /* CPTColor.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CPTColor.m; path = framework/Source/CPTColor.m; sourceTree = "<group>"; };
+		824DD7C7F820660C59711C94DEFE590D /* _CPTBorderLayer.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = _CPTBorderLayer.m; path = framework/Source/_CPTBorderLayer.m; sourceTree = "<group>"; };
+		82F64D0DC506DC45A9AC5CA3A2C7E53F /* Starscream-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Starscream-prefix.pch"; sourceTree = "<group>"; };
+		83E510C26D1A5946668B3EFF7906C1B4 /* CPTAnnotation.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CPTAnnotation.m; path = framework/Source/CPTAnnotation.m; sourceTree = "<group>"; };
+		84E7985F383202D534EC94F4E0BFCC1E /* _CPTAnimationCGFloatPeriod.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = _CPTAnimationCGFloatPeriod.m; path = framework/Source/_CPTAnimationCGFloatPeriod.m; sourceTree = "<group>"; };
+		85934B9E350A7FA1B6A1E17E5B6FEF19 /* CPTLayerAnnotation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CPTLayerAnnotation.h; path = framework/Source/CPTLayerAnnotation.h; sourceTree = "<group>"; };
+		8699C584DF28B0F4B67D38FE1AB71651 /* CPTLimitBand.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CPTLimitBand.h; path = framework/Source/CPTLimitBand.h; sourceTree = "<group>"; };
 		8725007FBCD385B2E9DE35717E746C9C /* Pods-AirQualityMonitoring.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-AirQualityMonitoring.modulemap"; sourceTree = "<group>"; };
+		88EBF185765FF72BD318952F198A3C90 /* Server.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Server.swift; path = Sources/Server/Server.swift; sourceTree = "<group>"; };
 		891B2270823847ED23F2ECFC28F935EC /* Starscream.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Starscream.framework; path = Starscream.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		8ED9AF7BDFE0F03CE129D72D85FCA460 /* WSEngine.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = WSEngine.swift; path = Sources/Engine/WSEngine.swift; sourceTree = "<group>"; };
-		9357D61506695B4EDB5014C06BE56A43 /* Starscream.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = Starscream.modulemap; sourceTree = "<group>"; };
+		8B03CB7DF5F46EC2AF2275DE09AA03EA /* CPTPlot.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CPTPlot.h; path = framework/Source/CPTPlot.h; sourceTree = "<group>"; };
+		8B3241B39074F0A2269E2C4BE2ED5C94 /* CPTFill.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CPTFill.m; path = framework/Source/CPTFill.m; sourceTree = "<group>"; };
+		8BA90B0A618257D3318F08A5471DD36C /* CPTTimeFormatter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CPTTimeFormatter.m; path = framework/Source/CPTTimeFormatter.m; sourceTree = "<group>"; };
+		8BEE8DD5F45C31B155B4F09EAF8274A3 /* CPTDebugQuickLook.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CPTDebugQuickLook.h; path = framework/Source/CPTDebugQuickLook.h; sourceTree = "<group>"; };
+		8E17CCAA97FF92124193D8FD64AB528A /* _CPTAnimationTimingFunctions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = _CPTAnimationTimingFunctions.h; path = framework/Source/_CPTAnimationTimingFunctions.h; sourceTree = "<group>"; };
+		8FEC5159A98D60B32AB3D9401DC691D0 /* NSNumberExtensions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = NSNumberExtensions.h; path = framework/Source/NSNumberExtensions.h; sourceTree = "<group>"; };
+		90554DC56FB34888CA8ACC628CDF4121 /* CPTNumericDataType.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CPTNumericDataType.h; path = framework/Source/CPTNumericDataType.h; sourceTree = "<group>"; };
+		90D6D12D6F57FCD71EC840A779B929C6 /* CPTMutableTextStyle.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CPTMutableTextStyle.h; path = framework/Source/CPTMutableTextStyle.h; sourceTree = "<group>"; };
+		90F80413D768F279BF5DE2A1CD1D9CB4 /* CPTMutablePlotRange.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CPTMutablePlotRange.m; path = framework/Source/CPTMutablePlotRange.m; sourceTree = "<group>"; };
+		9219C81EC75E3F2DF4980723BD304CA6 /* CPTPlotGroup.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CPTPlotGroup.h; path = framework/Source/CPTPlotGroup.h; sourceTree = "<group>"; };
+		9448CCD9291D4E70FEFA2F6031592C73 /* Transport.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Transport.swift; path = Sources/Transport/Transport.swift; sourceTree = "<group>"; };
+		96662F5868FA86DD646A46AD3591F77F /* _CPTAnimationCGPointPeriod.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = _CPTAnimationCGPointPeriod.m; path = framework/Source/_CPTAnimationCGPointPeriod.m; sourceTree = "<group>"; };
+		96A8F6CBEE79CBA84C52ECC2CD01FFF1 /* CPTXYGraph.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CPTXYGraph.h; path = framework/Source/CPTXYGraph.h; sourceTree = "<group>"; };
 		9A4471B5A052FA7B49E0CA932884B774 /* Pods-AirQualityMonitoring-AirQualityMonitoringUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-AirQualityMonitoring-AirQualityMonitoringUITests-umbrella.h"; sourceTree = "<group>"; };
 		9B378E0906FF3AC262B5186DFEC23721 /* Pods-AirQualityMonitoringTests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-AirQualityMonitoringTests-Info.plist"; sourceTree = "<group>"; };
+		9B3D33276AA83E52BC2CCA619B389865 /* _CPTSlateTheme.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = _CPTSlateTheme.m; path = framework/Source/_CPTSlateTheme.m; sourceTree = "<group>"; };
+		9C4EC11CB1DE364BDFA75EDACC65A157 /* CPTPlotRange.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CPTPlotRange.m; path = framework/Source/CPTPlotRange.m; sourceTree = "<group>"; };
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		A2EAFCD04DEECC2AC6B8727048A80617 /* Compression.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Compression.swift; path = Sources/Compression/Compression.swift; sourceTree = "<group>"; };
-		A62AC07A9271D8996F97CC35856BA647 /* WebSocketServer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = WebSocketServer.swift; path = Sources/Server/WebSocketServer.swift; sourceTree = "<group>"; };
+		9DDB8226F9B3F706BDBA314984A9DD22 /* CPTDerivedXYGraph.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CPTDerivedXYGraph.h; path = framework/Source/CPTDerivedXYGraph.h; sourceTree = "<group>"; };
+		9EFF8FA95E84FCC993DC681CF7F225D2 /* CPTTextLayer.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CPTTextLayer.m; path = framework/Source/CPTTextLayer.m; sourceTree = "<group>"; };
+		A52AE5B3B775A9D2ADF0CAD9FC0D9BA6 /* CPTBorderedLayer.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CPTBorderedLayer.m; path = framework/Source/CPTBorderedLayer.m; sourceTree = "<group>"; };
+		A5937CC02CCBA86DBB10AA1BEB3F8775 /* StringHTTPHandler.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = StringHTTPHandler.swift; path = Sources/Framer/StringHTTPHandler.swift; sourceTree = "<group>"; };
+		A6D4B3E5B9C25214E0A6CBDD36A5B40F /* CPTAnnotation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CPTAnnotation.h; path = framework/Source/CPTAnnotation.h; sourceTree = "<group>"; };
+		A6D5413F60660D6B04E8973E72EE0488 /* CPTUtilities.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CPTUtilities.m; path = framework/Source/CPTUtilities.m; sourceTree = "<group>"; };
+		A7C4F35E6E858580748B262DDD78640B /* CPTMutableLineStyle.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CPTMutableLineStyle.h; path = framework/Source/CPTMutableLineStyle.h; sourceTree = "<group>"; };
+		A80F09C267D8530E97F5719691597D60 /* CPTNumericData.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CPTNumericData.m; path = framework/Source/CPTNumericData.m; sourceTree = "<group>"; };
+		A833ED23029A3C7F252A7BE07D87B1FA /* _CPTXYTheme.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = _CPTXYTheme.h; path = framework/Source/_CPTXYTheme.h; sourceTree = "<group>"; };
+		AC0D7352F98E74981409BA108809FEF2 /* CorePlot-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CorePlot-prefix.pch"; sourceTree = "<group>"; };
+		AD526F2DB22703944C307F3E4D044C68 /* CPTImage.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CPTImage.m; path = framework/Source/CPTImage.m; sourceTree = "<group>"; };
+		ADAC7E983EC03C361881DD9E41D8B0E6 /* CPTAxisLabel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CPTAxisLabel.h; path = framework/Source/CPTAxisLabel.h; sourceTree = "<group>"; };
+		AFE476E559B45543FF506E591769E02C /* CPTMutableShadow.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CPTMutableShadow.m; path = framework/Source/CPTMutableShadow.m; sourceTree = "<group>"; };
+		B144BD72ACC8AAF3A1269A79CB27AAF1 /* CPTFill.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CPTFill.h; path = framework/Source/CPTFill.h; sourceTree = "<group>"; };
+		B1EC262D5D5B10A5758A9634282E5BC3 /* _CPTAnimationNSDecimalPeriod.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = _CPTAnimationNSDecimalPeriod.m; path = framework/Source/_CPTAnimationNSDecimalPeriod.m; sourceTree = "<group>"; };
+		B224676E658AC9B2E76645CA412EC39C /* _CPTFillColor.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = _CPTFillColor.h; path = framework/Source/_CPTFillColor.h; sourceTree = "<group>"; };
+		B2C9BC90D9CDA0F4280911FCBD1F94DD /* CPTPlotSpaceAnnotation.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CPTPlotSpaceAnnotation.m; path = framework/Source/CPTPlotSpaceAnnotation.m; sourceTree = "<group>"; };
+		B46C183A8F556C0FB9CD249511B0B07F /* CPTPlotSpace.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CPTPlotSpace.h; path = framework/Source/CPTPlotSpace.h; sourceTree = "<group>"; };
 		B5C1C95B545C576AD2B548FE75539B20 /* Pods_AirQualityMonitoring.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_AirQualityMonitoring.framework; path = "Pods-AirQualityMonitoring.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B8346865FF0FFA89344CE7457EF3A70D /* CorePlot.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = CorePlot.modulemap; sourceTree = "<group>"; };
+		B8C4180B83D128FE233B6E7E8A27BAE0 /* CPTBarPlot.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CPTBarPlot.h; path = framework/Source/CPTBarPlot.h; sourceTree = "<group>"; };
+		BA5B88A25B412A39592206A691ECF2FC /* CPTAxisLabelGroup.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CPTAxisLabelGroup.h; path = framework/Source/CPTAxisLabelGroup.h; sourceTree = "<group>"; };
+		BCCA7E6C478DF416A457A000690E0DD4 /* WebSocketServer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = WebSocketServer.swift; path = Sources/Server/WebSocketServer.swift; sourceTree = "<group>"; };
+		BDBB0437E97D2F1C697FBC4E7803C190 /* CPTTextStyle.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CPTTextStyle.m; path = framework/Source/CPTTextStyle.m; sourceTree = "<group>"; };
+		C071BD505C7FE123FE480C3977D65C49 /* CPTRangePlot.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CPTRangePlot.m; path = framework/Source/CPTRangePlot.m; sourceTree = "<group>"; };
+		C0DAED64B496E1A9133A5F82A28820CD /* _CPTConstraintsFixed.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = _CPTConstraintsFixed.m; path = framework/Source/_CPTConstraintsFixed.m; sourceTree = "<group>"; };
+		C0ECCA16F6B44471537D0B2ED4ABFDFE /* Security.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Security.swift; path = Sources/Security/Security.swift; sourceTree = "<group>"; };
+		C27FDEB1FE0D148C2525409AF55CD9DD /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		C367D6DD6F0CA45BFC27348B04FC6CCA /* CPTPlotRange.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CPTPlotRange.h; path = framework/Source/CPTPlotRange.h; sourceTree = "<group>"; };
+		C37B9199BCA7CA19FAE61F03B83CF514 /* CorePlot.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = CorePlot.debug.xcconfig; sourceTree = "<group>"; };
+		C4FE3445180F52DE08C12FC1C38C9253 /* CPTXYPlotSpace.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CPTXYPlotSpace.h; path = framework/Source/CPTXYPlotSpace.h; sourceTree = "<group>"; };
+		C5328D90FD7EF800F177561DDA5B214F /* _CPTFillGradient.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = _CPTFillGradient.m; path = framework/Source/_CPTFillGradient.m; sourceTree = "<group>"; };
+		C63717A0B09B1B26E443196B9B421E36 /* CPTLineCap.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CPTLineCap.h; path = framework/Source/CPTLineCap.h; sourceTree = "<group>"; };
+		C63FE830124657D6F79A784EEBC265FE /* CPTPlatformSpecificCategories.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CPTPlatformSpecificCategories.m; path = framework/iPhoneOnly/CPTPlatformSpecificCategories.m; sourceTree = "<group>"; };
+		C6FBE951D071C8613F22C1D562107762 /* CPTLayer.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CPTLayer.m; path = framework/Source/CPTLayer.m; sourceTree = "<group>"; };
+		C874BD61FCF6182145289A306ED21EDA /* CPTConstraints.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CPTConstraints.m; path = framework/Source/CPTConstraints.m; sourceTree = "<group>"; };
 		C975CA91DC93ACDF3C0015AC3C7D4967 /* Pods-AirQualityMonitoring-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-AirQualityMonitoring-umbrella.h"; sourceTree = "<group>"; };
-		C9C8BC22AA74FEDA9CF44852D28F68A4 /* Transport.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Transport.swift; path = Sources/Transport/Transport.swift; sourceTree = "<group>"; };
+		C9C39F8362A7FB5A15F20CF19387337D /* _CPTPlainWhiteTheme.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = _CPTPlainWhiteTheme.m; path = framework/Source/_CPTPlainWhiteTheme.m; sourceTree = "<group>"; };
+		C9DDDD89F2DF4F29C63BFE2513BF031C /* Framer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Framer.swift; path = Sources/Framer/Framer.swift; sourceTree = "<group>"; };
+		CA7D2D1F54549BD0039E2FD21285984A /* CPTNumericData+TypeConversion.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "CPTNumericData+TypeConversion.h"; path = "framework/Source/CPTNumericData+TypeConversion.h"; sourceTree = "<group>"; };
+		CEE43D6CD4430756ECD89389C9BE2990 /* CPTImage.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CPTImage.h; path = framework/Source/CPTImage.h; sourceTree = "<group>"; };
+		D0AABADC21F59AE829F5A9A5EC79BB2B /* CPTGridLines.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CPTGridLines.m; path = framework/Source/CPTGridLines.m; sourceTree = "<group>"; };
+		D12917C302C34E53ECB64BF12BCFA6B2 /* _CPTAnimationNSNumberPeriod.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = _CPTAnimationNSNumberPeriod.h; path = framework/Source/_CPTAnimationNSNumberPeriod.h; sourceTree = "<group>"; };
+		D27C9D653F90CD1924CC84BDA4F568A4 /* _CPTPlainBlackTheme.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = _CPTPlainBlackTheme.m; path = framework/Source/_CPTPlainBlackTheme.m; sourceTree = "<group>"; };
+		D329E7C21AC7C6818C8764A339172B18 /* CPTXYGraph.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CPTXYGraph.m; path = framework/Source/CPTXYGraph.m; sourceTree = "<group>"; };
+		D39321635880CBEE2D8697C35CC9B432 /* CPTTextStylePlatformSpecific.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CPTTextStylePlatformSpecific.m; path = framework/iPhoneOnly/CPTTextStylePlatformSpecific.m; sourceTree = "<group>"; };
+		D4A2D7B70646C44CB2CE77561AD660AB /* CPTAnimationPeriod.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CPTAnimationPeriod.m; path = framework/Source/CPTAnimationPeriod.m; sourceTree = "<group>"; };
+		D7DB1281B47952393EC6638394696D1A /* CorePlot.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = CorePlot.framework; path = CorePlot.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DA3EC08902CE4A20B0A491235441B6A9 /* CPTLimitBand.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CPTLimitBand.m; path = framework/Source/CPTLimitBand.m; sourceTree = "<group>"; };
+		DACE2084D87CFC96CB8C82A0D83E9F00 /* _CPTFillColor.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = _CPTFillColor.m; path = framework/Source/_CPTFillColor.m; sourceTree = "<group>"; };
+		DB1B3A882710615C57088AFDB3DAC5F2 /* CPTLineCap.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CPTLineCap.m; path = framework/Source/CPTLineCap.m; sourceTree = "<group>"; };
+		DB9CEB31BEC7A77444BD5784EF27B04D /* CPTAxisLabel.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CPTAxisLabel.m; path = framework/Source/CPTAxisLabel.m; sourceTree = "<group>"; };
+		DC2DA895BFCB56BEB566CC2308F9F7BE /* CPTAnimationOperation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CPTAnimationOperation.h; path = framework/Source/CPTAnimationOperation.h; sourceTree = "<group>"; };
 		DC474FDFD6767847B6F47CEB763B262E /* Pods-AirQualityMonitoring-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-AirQualityMonitoring-frameworks.sh"; sourceTree = "<group>"; };
+		DD24C075FC0F4878A7054C5816EAC3D5 /* CPTPieChart.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CPTPieChart.m; path = framework/Source/CPTPieChart.m; sourceTree = "<group>"; };
+		DD8F6326DBDBE8B0C4F308223319A68D /* CPTRangePlot.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CPTRangePlot.h; path = framework/Source/CPTRangePlot.h; sourceTree = "<group>"; };
+		DDB78571B60F02C2218DD21AABAF63B7 /* CPTFunctionDataSource.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CPTFunctionDataSource.h; path = framework/Source/CPTFunctionDataSource.h; sourceTree = "<group>"; };
+		DE5E0E5C384A78F58E8904D6FD7EEBE1 /* CPTLegend.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CPTLegend.h; path = framework/Source/CPTLegend.h; sourceTree = "<group>"; };
+		DE7C930E57C237F8D8419D4A2BB2BFDF /* CPTGraph.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CPTGraph.h; path = framework/Source/CPTGraph.h; sourceTree = "<group>"; };
+		DE97F690977EAA610749F3477958D3DD /* CPTGridLineGroup.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CPTGridLineGroup.m; path = framework/Source/CPTGridLineGroup.m; sourceTree = "<group>"; };
+		DEA416215D30BA75A951253CEC77922D /* CorePlot.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = CorePlot.release.xcconfig; sourceTree = "<group>"; };
 		DEBEAC96BEB2CE7D9E392E3C6B0057F7 /* Pods-AirQualityMonitoringTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-AirQualityMonitoringTests-acknowledgements.plist"; sourceTree = "<group>"; };
-		DFD212064ED1CC47B2560F6E20526B3B /* Server.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Server.swift; path = Sources/Server/Server.swift; sourceTree = "<group>"; };
+		DF88ADE4C8D92D2827AD4C1DAFBCF8F5 /* CPTMutableShadow.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CPTMutableShadow.h; path = framework/Source/CPTMutableShadow.h; sourceTree = "<group>"; };
 		E12CD7425E385E39201C144965A5B8FD /* Pods-AirQualityMonitoringTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-AirQualityMonitoringTests-umbrella.h"; sourceTree = "<group>"; };
-		E6B8353DB672E6C84ABAF6B044BC47F3 /* Starscream.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Starscream.release.xcconfig; sourceTree = "<group>"; };
-		ECFB158E08A6502A38761C96CB68975B /* Starscream-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Starscream-umbrella.h"; sourceTree = "<group>"; };
+		E1B18C6B8D794FF590331EC5AB460D14 /* CPTPlot.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CPTPlot.m; path = framework/Source/CPTPlot.m; sourceTree = "<group>"; };
+		E225772FEC7139340CFF1C56463213DA /* _CPTConstraintsFixed.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = _CPTConstraintsFixed.h; path = framework/Source/_CPTConstraintsFixed.h; sourceTree = "<group>"; };
+		E49509CEFE1936D81C8567992B111877 /* CPTXYAxisSet.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CPTXYAxisSet.m; path = framework/Source/CPTXYAxisSet.m; sourceTree = "<group>"; };
+		E49E3AC9754016E4B6944220F32BBB72 /* HTTPHandler.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HTTPHandler.swift; path = Sources/Framer/HTTPHandler.swift; sourceTree = "<group>"; };
+		E4FB635263131A4C4C57C355BFF3671E /* _CPTSlateTheme.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = _CPTSlateTheme.h; path = framework/Source/_CPTSlateTheme.h; sourceTree = "<group>"; };
+		E55299F7C856246B3B84E8E037048AA0 /* CPTLegendEntry.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CPTLegendEntry.h; path = framework/Source/CPTLegendEntry.h; sourceTree = "<group>"; };
+		E7B1B8826F781A9AC975549BDA3B2605 /* CorePlot-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CorePlot-umbrella.h"; sourceTree = "<group>"; };
+		EAC88322895AB86A678246FD013121D8 /* CPTLineStyle.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CPTLineStyle.m; path = framework/Source/CPTLineStyle.m; sourceTree = "<group>"; };
+		EC1B0AD0B27F7C07714E4A9827651676 /* CPTTextStyle.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CPTTextStyle.h; path = framework/Source/CPTTextStyle.h; sourceTree = "<group>"; };
+		EC42D5797508F5AE0D7C6B147B9E4461 /* Starscream.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Starscream.debug.xcconfig; sourceTree = "<group>"; };
+		EC4ED4805A0F4152F85686E22CBC83E3 /* _CPTFillImage.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = _CPTFillImage.h; path = framework/Source/_CPTFillImage.h; sourceTree = "<group>"; };
+		EE6BA94380DB82A75F774CAFF4738961 /* CPTGraphHostingView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CPTGraphHostingView.m; path = framework/iPhoneOnly/CPTGraphHostingView.m; sourceTree = "<group>"; };
+		EEB2DFCBE29DC741C7C84476C953F412 /* CPTXYPlotSpace.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CPTXYPlotSpace.m; path = framework/Source/CPTXYPlotSpace.m; sourceTree = "<group>"; };
+		EFB35B5570F2B7FCC9881DB6FF58F7B9 /* CPTPlotAreaFrame.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CPTPlotAreaFrame.m; path = framework/Source/CPTPlotAreaFrame.m; sourceTree = "<group>"; };
+		F03EBC735755D499BA07C4D4B41214F8 /* WebSocket.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = WebSocket.swift; path = Sources/Starscream/WebSocket.swift; sourceTree = "<group>"; };
+		F04F1C69B863EA36BFD74D3E1D43B1BC /* CPTAnimation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CPTAnimation.h; path = framework/Source/CPTAnimation.h; sourceTree = "<group>"; };
+		F268B80501A0FD2B9360963BE99019A0 /* CPTCalendarFormatter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CPTCalendarFormatter.m; path = framework/Source/CPTCalendarFormatter.m; sourceTree = "<group>"; };
+		F29B9B13087AD61A26A8166902EC9B79 /* _CPTAnimationCGPointPeriod.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = _CPTAnimationCGPointPeriod.h; path = framework/Source/_CPTAnimationCGPointPeriod.h; sourceTree = "<group>"; };
+		F57CB0D2207FA8EB60ED5CEE844CC0C9 /* CPTPlatformSpecificFunctions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CPTPlatformSpecificFunctions.m; path = framework/iPhoneOnly/CPTPlatformSpecificFunctions.m; sourceTree = "<group>"; };
+		F6A4A8F3F6DCFA9934B049EE1A1B4403 /* CPTUtilities.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CPTUtilities.h; path = framework/Source/CPTUtilities.h; sourceTree = "<group>"; };
+		F6EF0B4A4B5E0BD24F6CCE1F13BB6422 /* CPTExceptions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CPTExceptions.m; path = framework/Source/CPTExceptions.m; sourceTree = "<group>"; };
+		F6F3388A63982DEA4AB364E168BE0BC1 /* CPTPlotSpaceAnnotation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CPTPlotSpaceAnnotation.h; path = framework/Source/CPTPlotSpaceAnnotation.h; sourceTree = "<group>"; };
+		F7A3D87107536F8D6BD7C1AC51B57482 /* CPTTextStylePlatformSpecific.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CPTTextStylePlatformSpecific.h; path = framework/iPhoneOnly/CPTTextStylePlatformSpecific.h; sourceTree = "<group>"; };
+		F854C0006C5097B19FA0DD7844790FB4 /* CPTShadow.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CPTShadow.h; path = framework/Source/CPTShadow.h; sourceTree = "<group>"; };
 		F8A438E0043FF65283909699E890087D /* Pods-AirQualityMonitoring.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-AirQualityMonitoring.release.xcconfig"; sourceTree = "<group>"; };
+		F8FC14989DEBD6AEEC104E4118AA6365 /* Starscream.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = Starscream.modulemap; sourceTree = "<group>"; };
 		F9869BFE2BCA5B7B0B814C89BAEE0B90 /* Pods-AirQualityMonitoring-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-AirQualityMonitoring-dummy.m"; sourceTree = "<group>"; };
+		F9A5EE459B6271A5D1CDBC88EAA055B4 /* Starscream.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Starscream.release.xcconfig; sourceTree = "<group>"; };
+		FC78054F6399CBCAB2252979CCDF48ED /* _CPTStocksTheme.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = _CPTStocksTheme.h; path = framework/Source/_CPTStocksTheme.h; sourceTree = "<group>"; };
+		FDD2AF2EE71C229BC9C64692BE5DE6C2 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		FDE5F27E4F7A56E04751D61AE2C681AE /* FoundationSecurity.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FoundationSecurity.swift; path = Sources/Security/FoundationSecurity.swift; sourceTree = "<group>"; };
+		FE7F427CA20FCF5EB55A191443C28288 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/QuartzCore.framework; sourceTree = DEVELOPER_DIR; };
+		FF1CE0489BCDF7975F9665961852C0A2 /* CPTAxisLabelGroup.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CPTAxisLabelGroup.m; path = framework/Source/CPTAxisLabelGroup.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		06740C9CD696BAE9217B329D9017423A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ECE891F3B07C3680998DB3348BDEA502 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		4CCC188EBE5C479D0F07E724B622C03A /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -144,39 +567,86 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		5C53FD4141920DF3FC5B7D17A79E285D /* Frameworks */ = {
+		583A6C82AF379449823ACF3D9DC0BC63 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				28D3CED62E15072BE2291498D54231D0 /* Foundation.framework in Frameworks */,
+				CCFE94CDE367F09083B5F37C4B3E14F8 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		80B2F0468D52FF4A06E842A34441CB12 /* Frameworks */ = {
+		7777FBC6C56110263838037140C5C2CA /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				711BDCAC51741FE975358BA49ADEFAEA /* Foundation.framework in Frameworks */,
+				48EDDA1BCF7A2C6B92F5C334DC46AFBA /* Foundation.framework in Frameworks */,
+				21A199DDB92516873560E88636023A68 /* QuartzCore.framework in Frameworks */,
+				59D48E26EF51966AC9C76D9758A0C8D5 /* UIKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		00B2FEDCAC8A8BACE0F9A4E951E14F8C /* Pods */ = {
+		03173B8E35DCADB6C0E40D8E7534F13C /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				7629874EBAAE6E64DF87ACB68FB5A08E /* Starscream */,
+				A65500C2AEF90AE1B45D9E0C34B5E770 /* CorePlot */,
+				59AF3CB9301C1F8A69F478C7D5F81840 /* Starscream */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
 		};
-		578452D2E740E91742655AC8F1636D1F /* iOS */ = {
+		03C5C200A0787E300053CFA8F53CA094 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */,
+				84500DE8FA3C1A04FB6C1A7869926382 /* iOS */,
 			);
-			name = iOS;
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		3F9A33D57FD1FB4E9E53894AF8F7E0B8 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				F8FC14989DEBD6AEEC104E4118AA6365 /* Starscream.modulemap */,
+				11917B00DC71A5727BC16A1FF1376442 /* Starscream-dummy.m */,
+				5B3420A4802B3C81C6FE2A5113BC0DD9 /* Starscream-Info.plist */,
+				82F64D0DC506DC45A9AC5CA3A2C7E53F /* Starscream-prefix.pch */,
+				589CF44B7745C175B7DE93C9390406C7 /* Starscream-umbrella.h */,
+				EC42D5797508F5AE0D7C6B147B9E4461 /* Starscream.debug.xcconfig */,
+				F9A5EE459B6271A5D1CDBC88EAA055B4 /* Starscream.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Starscream";
+			sourceTree = "<group>";
+		};
+		59AF3CB9301C1F8A69F478C7D5F81840 /* Starscream */ = {
+			isa = PBXGroup;
+			children = (
+				15F0F3A99EEC993E2F84CEA0BE28B745 /* Compression.swift */,
+				4957BCECC49B7B04F6A63FBF2729599D /* Data+Extensions.swift */,
+				62E4FA419493C6F68FC6435E25CD8B4B /* Engine.swift */,
+				6E3B81D0508A83DBF42213785309CC8F /* FoundationHTTPHandler.swift */,
+				5CEBFC58A90FCE017E5E2C8F68C076CD /* FoundationHTTPServerHandler.swift */,
+				FDE5F27E4F7A56E04751D61AE2C681AE /* FoundationSecurity.swift */,
+				4DED6B4D1DAA276529B5B34874D70019 /* FoundationTransport.swift */,
+				79CBD7A1E3357A343812BA83CAE5E0E9 /* FrameCollector.swift */,
+				C9DDDD89F2DF4F29C63BFE2513BF031C /* Framer.swift */,
+				E49E3AC9754016E4B6944220F32BBB72 /* HTTPHandler.swift */,
+				6B9FF8568157710B4060E7001C8EED50 /* NativeEngine.swift */,
+				C0ECCA16F6B44471537D0B2ED4ABFDFE /* Security.swift */,
+				88EBF185765FF72BD318952F198A3C90 /* Server.swift */,
+				A5937CC02CCBA86DBB10AA1BEB3F8775 /* StringHTTPHandler.swift */,
+				2837AF461A835740510F9FF3643EC329 /* TCPTransport.swift */,
+				9448CCD9291D4E70FEFA2F6031592C73 /* Transport.swift */,
+				F03EBC735755D499BA07C4D4B41214F8 /* WebSocket.swift */,
+				BCCA7E6C478DF416A457A000690E0DD4 /* WebSocketServer.swift */,
+				16FFFC367176111BD5D09734B639D442 /* WSCompression.swift */,
+				59927E6581FE303E27E6E110730D647A /* WSEngine.swift */,
+				3F9A33D57FD1FB4E9E53894AF8F7E0B8 /* Support Files */,
+			);
+			name = Starscream;
+			path = Starscream;
 			sourceTree = "<group>";
 		};
 		5B5528E62F7D27EFFF679B45BE232B4A /* Pods-AirQualityMonitoringTests */ = {
@@ -195,35 +665,6 @@
 			path = "Target Support Files/Pods-AirQualityMonitoringTests";
 			sourceTree = "<group>";
 		};
-		7629874EBAAE6E64DF87ACB68FB5A08E /* Starscream */ = {
-			isa = PBXGroup;
-			children = (
-				A2EAFCD04DEECC2AC6B8727048A80617 /* Compression.swift */,
-				7175E21DED4337E7BBD3EF7424F315F6 /* Data+Extensions.swift */,
-				4A0925310BE76B051E1B51E7FBB37F35 /* Engine.swift */,
-				3AF39A541BA78B8472A0F9D4E3504B90 /* FoundationHTTPHandler.swift */,
-				81F95157FC4CC8593A1B1E4607562122 /* FoundationHTTPServerHandler.swift */,
-				5831A57C2E79638C447411ED69EB6C42 /* FoundationSecurity.swift */,
-				3D7E34251E9353A38AC748BB94EDC575 /* FoundationTransport.swift */,
-				37C291A02C054326B5C6022EACD814E4 /* FrameCollector.swift */,
-				1454E39E11FD28A611495E03B2015FD4 /* Framer.swift */,
-				35ED0E33A6DD024AC0E71FEF3EA74D7C /* HTTPHandler.swift */,
-				56ADCC3B462E7AE2D80872C7A66CA4A7 /* NativeEngine.swift */,
-				4FC292255BA6A323D7D1C01215CC6591 /* Security.swift */,
-				DFD212064ED1CC47B2560F6E20526B3B /* Server.swift */,
-				16D70531198624C7D8B14FF91C62FF6B /* StringHTTPHandler.swift */,
-				56CCA8582A00BBFBC2E9AFFC1C1D53A9 /* TCPTransport.swift */,
-				C9C8BC22AA74FEDA9CF44852D28F68A4 /* Transport.swift */,
-				4D2727BA14E02E7210DD6B547EA7D394 /* WebSocket.swift */,
-				A62AC07A9271D8996F97CC35856BA647 /* WebSocketServer.swift */,
-				1918C09D193EF7F62A7C2611F12AC44B /* WSCompression.swift */,
-				8ED9AF7BDFE0F03CE129D72D85FCA460 /* WSEngine.swift */,
-				C34F19E6E210C87A192216575C48E771 /* Support Files */,
-			);
-			name = Starscream;
-			path = Starscream;
-			sourceTree = "<group>";
-		};
 		773A2E169DDE0F6643D657CDE762DEC8 /* Targets Support Files */ = {
 			isa = PBXGroup;
 			children = (
@@ -232,6 +673,16 @@
 				5B5528E62F7D27EFFF679B45BE232B4A /* Pods-AirQualityMonitoringTests */,
 			);
 			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		84500DE8FA3C1A04FB6C1A7869926382 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				FDD2AF2EE71C229BC9C64692BE5DE6C2 /* Foundation.framework */,
+				FE7F427CA20FCF5EB55A191443C28288 /* QuartzCore.framework */,
+				C27FDEB1FE0D148C2525409AF55CD9DD /* UIKit.framework */,
+			);
+			name = iOS;
 			sourceTree = "<group>";
 		};
 		A5F0594B1AC7E06388D8EEF986E63D51 /* Pods-AirQualityMonitoring-AirQualityMonitoringUITests */ = {
@@ -251,24 +702,212 @@
 			path = "Target Support Files/Pods-AirQualityMonitoring-AirQualityMonitoringUITests";
 			sourceTree = "<group>";
 		};
-		C34F19E6E210C87A192216575C48E771 /* Support Files */ = {
+		A65500C2AEF90AE1B45D9E0C34B5E770 /* CorePlot */ = {
 			isa = PBXGroup;
 			children = (
-				9357D61506695B4EDB5014C06BE56A43 /* Starscream.modulemap */,
-				21B65F09370A4D9877255EC1C47060A2 /* Starscream-dummy.m */,
-				85C44A9AB6F12498BFC8233B9D599206 /* Starscream-Info.plist */,
-				010F5C43A348BC3C417C21FA354444E2 /* Starscream-prefix.pch */,
-				ECFB158E08A6502A38761C96CB68975B /* Starscream-umbrella.h */,
-				2C1CF04602B9D61F89BCC51DEA7939B0 /* Starscream.debug.xcconfig */,
-				E6B8353DB672E6C84ABAF6B044BC47F3 /* Starscream.release.xcconfig */,
+				350541B8813F45F1E2DEFC5F1A7DF987 /* _CPTAnimationCGFloatPeriod.h */,
+				84E7985F383202D534EC94F4E0BFCC1E /* _CPTAnimationCGFloatPeriod.m */,
+				F29B9B13087AD61A26A8166902EC9B79 /* _CPTAnimationCGPointPeriod.h */,
+				96662F5868FA86DD646A46AD3591F77F /* _CPTAnimationCGPointPeriod.m */,
+				29A2948CE20116410C2787547D839A37 /* _CPTAnimationCGRectPeriod.h */,
+				0CF8B170C991B93467D98B59E544F276 /* _CPTAnimationCGRectPeriod.m */,
+				4E85184202E471D0C76DC41C9FFC42DD /* _CPTAnimationCGSizePeriod.h */,
+				3A7791D7682FB891B2214FA9DA78BF4F /* _CPTAnimationCGSizePeriod.m */,
+				072EA5513916388700339D876906AE2E /* _CPTAnimationNSDecimalPeriod.h */,
+				B1EC262D5D5B10A5758A9634282E5BC3 /* _CPTAnimationNSDecimalPeriod.m */,
+				D12917C302C34E53ECB64BF12BCFA6B2 /* _CPTAnimationNSNumberPeriod.h */,
+				15F8FD95D3469D692B706206F7DF9763 /* _CPTAnimationNSNumberPeriod.m */,
+				592E2AF390535600197199B8422FC5ED /* _CPTAnimationPlotRangePeriod.h */,
+				7D795A1D13108FA8F6B9BDD4A172C830 /* _CPTAnimationPlotRangePeriod.m */,
+				8E17CCAA97FF92124193D8FD64AB528A /* _CPTAnimationTimingFunctions.h */,
+				4FAECE8A7B22A0B6DB89606F2A5B8B1C /* _CPTAnimationTimingFunctions.m */,
+				53963486A1AFAC0D1FB30D50DFFC6710 /* _CPTBorderLayer.h */,
+				824DD7C7F820660C59711C94DEFE590D /* _CPTBorderLayer.m */,
+				E225772FEC7139340CFF1C56463213DA /* _CPTConstraintsFixed.h */,
+				C0DAED64B496E1A9133A5F82A28820CD /* _CPTConstraintsFixed.m */,
+				6DF3193B4A3788B4DFFB2DC54EB5EFFA /* _CPTConstraintsRelative.h */,
+				06F8D0C461886DF20BD901B0AD386318 /* _CPTConstraintsRelative.m */,
+				48EC21CA67A9EC0E4D8F784B6F093643 /* _CPTDarkGradientTheme.h */,
+				2FFD743B90A56416E3F9A7EE1087FA01 /* _CPTDarkGradientTheme.m */,
+				B224676E658AC9B2E76645CA412EC39C /* _CPTFillColor.h */,
+				DACE2084D87CFC96CB8C82A0D83E9F00 /* _CPTFillColor.m */,
+				523FEB2C36E2C2BC308DF62DD4532919 /* _CPTFillGradient.h */,
+				C5328D90FD7EF800F177561DDA5B214F /* _CPTFillGradient.m */,
+				EC4ED4805A0F4152F85686E22CBC83E3 /* _CPTFillImage.h */,
+				1B04E20F029B83C58E4E3104531FC887 /* _CPTFillImage.m */,
+				674A8F1440B8350C87F3187B2FEFE09B /* _CPTMaskLayer.h */,
+				30F9BC7553298ED5BDF4637F34E2A2A5 /* _CPTMaskLayer.m */,
+				60213CD21F8A66F454C20F01EBCF4422 /* _CPTPlainBlackTheme.h */,
+				D27C9D653F90CD1924CC84BDA4F568A4 /* _CPTPlainBlackTheme.m */,
+				6AFF15B04F4B6AE9B2CE68EDDA1C773B /* _CPTPlainWhiteTheme.h */,
+				C9C39F8362A7FB5A15F20CF19387337D /* _CPTPlainWhiteTheme.m */,
+				E4FB635263131A4C4C57C355BFF3671E /* _CPTSlateTheme.h */,
+				9B3D33276AA83E52BC2CCA619B389865 /* _CPTSlateTheme.m */,
+				FC78054F6399CBCAB2252979CCDF48ED /* _CPTStocksTheme.h */,
+				1061338B6C4D2B548CF48D737CEDBDCA /* _CPTStocksTheme.m */,
+				A833ED23029A3C7F252A7BE07D87B1FA /* _CPTXYTheme.h */,
+				0E6B58FFCCA567921CE3761B89F22E45 /* _CPTXYTheme.m */,
+				43B192F76BDF5DBC3716C36559300367 /* CorePlot.h */,
+				42E588A4C27CCB4CF6E6D37DEA4F051D /* CorePlot-CocoaTouch.h */,
+				F04F1C69B863EA36BFD74D3E1D43B1BC /* CPTAnimation.h */,
+				1BBAF72B136B696988D3CCD680B29A0F /* CPTAnimation.m */,
+				DC2DA895BFCB56BEB566CC2308F9F7BE /* CPTAnimationOperation.h */,
+				679A79F2819982E6A0A7399FFE59F58D /* CPTAnimationOperation.m */,
+				0DDDFED6828BB652A9CD85E3F3977583 /* CPTAnimationPeriod.h */,
+				D4A2D7B70646C44CB2CE77561AD660AB /* CPTAnimationPeriod.m */,
+				A6D4B3E5B9C25214E0A6CBDD36A5B40F /* CPTAnnotation.h */,
+				83E510C26D1A5946668B3EFF7906C1B4 /* CPTAnnotation.m */,
+				6BB22CDE4143C5E50585CDCEA14CFBE7 /* CPTAnnotationHostLayer.h */,
+				577EB4392680F466D0F977155D9FC409 /* CPTAnnotationHostLayer.m */,
+				7A69805FC342317ED895BD8FF752FB37 /* CPTAxis.h */,
+				1F569181B7B708183DD1D937479ED580 /* CPTAxis.m */,
+				ADAC7E983EC03C361881DD9E41D8B0E6 /* CPTAxisLabel.h */,
+				DB9CEB31BEC7A77444BD5784EF27B04D /* CPTAxisLabel.m */,
+				BA5B88A25B412A39592206A691ECF2FC /* CPTAxisLabelGroup.h */,
+				FF1CE0489BCDF7975F9665961852C0A2 /* CPTAxisLabelGroup.m */,
+				7BD45F9BC74D210DA085E7706BDCF9BE /* CPTAxisSet.h */,
+				45E34BCDF705EA3EC82A2B7074E0C260 /* CPTAxisSet.m */,
+				372D67E92165759A694F9328750F1206 /* CPTAxisTitle.h */,
+				652F9BC8A385A2176FC92AB057C6304F /* CPTAxisTitle.m */,
+				B8C4180B83D128FE233B6E7E8A27BAE0 /* CPTBarPlot.h */,
+				7A537E6E6ECDEC5C18D7369B8613D093 /* CPTBarPlot.m */,
+				004AF9DA0E2F64AAACD6851775DD9780 /* CPTBorderedLayer.h */,
+				A52AE5B3B775A9D2ADF0CAD9FC0D9BA6 /* CPTBorderedLayer.m */,
+				39C22DF728D16C092AE49D28584C31AD /* CPTCalendarFormatter.h */,
+				F268B80501A0FD2B9360963BE99019A0 /* CPTCalendarFormatter.m */,
+				2F29668C38D2792EFDD11304220AA024 /* CPTColor.h */,
+				821AB191B36E13DA4573A5DB77B5B497 /* CPTColor.m */,
+				10399D2DEF169AFEA4678463C1488C4A /* CPTColorSpace.h */,
+				0B8A3E1770D971F742A550838ABAC21D /* CPTColorSpace.m */,
+				415439A9C9631F69908F40B2F17CC195 /* CPTConstraints.h */,
+				C874BD61FCF6182145289A306ED21EDA /* CPTConstraints.m */,
+				8BEE8DD5F45C31B155B4F09EAF8274A3 /* CPTDebugQuickLook.h */,
+				2B86A04DB986490BF058A93AE24675BF /* CPTDefinitions.h */,
+				7BC01E9BDD6991ACC6F48F6E7231A268 /* CPTDefinitions.m */,
+				9DDB8226F9B3F706BDBA314984A9DD22 /* CPTDerivedXYGraph.h */,
+				0DF9ECD50250FCD9114E2CA9BCFCD19E /* CPTDerivedXYGraph.m */,
+				16000206B11AB5012ACAA993ECBE9B0F /* CPTExceptions.h */,
+				F6EF0B4A4B5E0BD24F6CCE1F13BB6422 /* CPTExceptions.m */,
+				B144BD72ACC8AAF3A1269A79CB27AAF1 /* CPTFill.h */,
+				8B3241B39074F0A2269E2C4BE2ED5C94 /* CPTFill.m */,
+				DDB78571B60F02C2218DD21AABAF63B7 /* CPTFunctionDataSource.h */,
+				736555D3C35EBE43C52A26FC38BBB086 /* CPTFunctionDataSource.m */,
+				44065E4221DAFA49904113EB5D5FFA01 /* CPTGradient.h */,
+				76E2880069458FEB2792539614B2E345 /* CPTGradient.m */,
+				DE7C930E57C237F8D8419D4A2BB2BFDF /* CPTGraph.h */,
+				3BC06715528EFD3B80788B24BA408994 /* CPTGraph.m */,
+				1D41066A84F7132ACCF75B5F20822E5C /* CPTGraphHostingView.h */,
+				EE6BA94380DB82A75F774CAFF4738961 /* CPTGraphHostingView.m */,
+				1AD571D53C6E2085B82B9053911FE967 /* CPTGridLineGroup.h */,
+				DE97F690977EAA610749F3477958D3DD /* CPTGridLineGroup.m */,
+				46C9E2E1317854167512D742405CE47F /* CPTGridLines.h */,
+				D0AABADC21F59AE829F5A9A5EC79BB2B /* CPTGridLines.m */,
+				CEE43D6CD4430756ECD89389C9BE2990 /* CPTImage.h */,
+				AD526F2DB22703944C307F3E4D044C68 /* CPTImage.m */,
+				1471B3F4520F599B224B371F797B75CA /* CPTImagePlatformSpecific.m */,
+				653A0C13CDB43A9ABBFB2D0D5943F2BF /* CPTLayer.h */,
+				C6FBE951D071C8613F22C1D562107762 /* CPTLayer.m */,
+				85934B9E350A7FA1B6A1E17E5B6FEF19 /* CPTLayerAnnotation.h */,
+				4319F244ACD391125C89E645D806D792 /* CPTLayerAnnotation.m */,
+				DE5E0E5C384A78F58E8904D6FD7EEBE1 /* CPTLegend.h */,
+				20CB54828C812F538D2CD10322CDF306 /* CPTLegend.m */,
+				E55299F7C856246B3B84E8E037048AA0 /* CPTLegendEntry.h */,
+				50EBCC622F786B30D5DB250838BA9C7A /* CPTLegendEntry.m */,
+				8699C584DF28B0F4B67D38FE1AB71651 /* CPTLimitBand.h */,
+				DA3EC08902CE4A20B0A491235441B6A9 /* CPTLimitBand.m */,
+				C63717A0B09B1B26E443196B9B421E36 /* CPTLineCap.h */,
+				DB1B3A882710615C57088AFDB3DAC5F2 /* CPTLineCap.m */,
+				43C2B09461E0670AD746769E3A7F090D /* CPTLineStyle.h */,
+				EAC88322895AB86A678246FD013121D8 /* CPTLineStyle.m */,
+				A7C4F35E6E858580748B262DDD78640B /* CPTMutableLineStyle.h */,
+				0B50890E9A7992912625F3CF54100347 /* CPTMutableLineStyle.m */,
+				230E341DB61730C2E54E33082BD78B68 /* CPTMutableNumericData.h */,
+				10ED658E5BAD9DC529905F77D4C8CCEE /* CPTMutableNumericData.m */,
+				33987970F310BA8F7667306161B29C5B /* CPTMutableNumericData+TypeConversion.h */,
+				2CC871AF740B96534E0C020E55B5BC80 /* CPTMutableNumericData+TypeConversion.m */,
+				1F61B0A506579A611270E2FE5E1A8E2C /* CPTMutablePlotRange.h */,
+				90F80413D768F279BF5DE2A1CD1D9CB4 /* CPTMutablePlotRange.m */,
+				DF88ADE4C8D92D2827AD4C1DAFBCF8F5 /* CPTMutableShadow.h */,
+				AFE476E559B45543FF506E591769E02C /* CPTMutableShadow.m */,
+				90D6D12D6F57FCD71EC840A779B929C6 /* CPTMutableTextStyle.h */,
+				55088B7E9045CDD3A7FE39F878CD332F /* CPTMutableTextStyle.m */,
+				40EF585837E868EA04AD01BAE747EA01 /* CPTNumericData.h */,
+				A80F09C267D8530E97F5719691597D60 /* CPTNumericData.m */,
+				CA7D2D1F54549BD0039E2FD21285984A /* CPTNumericData+TypeConversion.h */,
+				523160531232BDCCC01FDBC409BC679B /* CPTNumericData+TypeConversion.m */,
+				90554DC56FB34888CA8ACC628CDF4121 /* CPTNumericDataType.h */,
+				7BB589CF5C4121B92C0460DD6AD3D932 /* CPTNumericDataType.m */,
+				1EAA52F0DC2D03420F1DE0837DA9EF6E /* CPTPathExtensions.h */,
+				4C1C3C5ADDA967A8C4193A25CA2D6E23 /* CPTPathExtensions.m */,
+				10F327ECF2BF6D5D0E847B5133E41020 /* CPTPieChart.h */,
+				DD24C075FC0F4878A7054C5816EAC3D5 /* CPTPieChart.m */,
+				557DED9F86C2122D3E40568817DDDB09 /* CPTPlatformSpecificCategories.h */,
+				C63FE830124657D6F79A784EEBC265FE /* CPTPlatformSpecificCategories.m */,
+				08DA8E9945FC90CA4C810834D9641C98 /* CPTPlatformSpecificDefines.h */,
+				4609D664E71044BDF8F007BE7AE318E9 /* CPTPlatformSpecificDefines.m */,
+				18CD6B118FFB804A22F3594356A5F8DC /* CPTPlatformSpecificFunctions.h */,
+				F57CB0D2207FA8EB60ED5CEE844CC0C9 /* CPTPlatformSpecificFunctions.m */,
+				8B03CB7DF5F46EC2AF2275DE09AA03EA /* CPTPlot.h */,
+				E1B18C6B8D794FF590331EC5AB460D14 /* CPTPlot.m */,
+				701B25CD3640F588F45A107EA57A051D /* CPTPlotArea.h */,
+				2063E3205F0D6D01B9FDA20D7B6C3A79 /* CPTPlotArea.m */,
+				579534C290E328B908EA02D5ED47D2EA /* CPTPlotAreaFrame.h */,
+				EFB35B5570F2B7FCC9881DB6FF58F7B9 /* CPTPlotAreaFrame.m */,
+				9219C81EC75E3F2DF4980723BD304CA6 /* CPTPlotGroup.h */,
+				110A663D6410D7FDD690761B2620CE90 /* CPTPlotGroup.m */,
+				C367D6DD6F0CA45BFC27348B04FC6CCA /* CPTPlotRange.h */,
+				9C4EC11CB1DE364BDFA75EDACC65A157 /* CPTPlotRange.m */,
+				B46C183A8F556C0FB9CD249511B0B07F /* CPTPlotSpace.h */,
+				5CC44E60941435A5B3BCEF4C73FE36E5 /* CPTPlotSpace.m */,
+				F6F3388A63982DEA4AB364E168BE0BC1 /* CPTPlotSpaceAnnotation.h */,
+				B2C9BC90D9CDA0F4280911FCBD1F94DD /* CPTPlotSpaceAnnotation.m */,
+				776E32F84FBFF8EED4BB01B43FBED76A /* CPTPlotSymbol.h */,
+				1AF311013A54858ACFE612B60E1B9225 /* CPTPlotSymbol.m */,
+				DD8F6326DBDBE8B0C4F308223319A68D /* CPTRangePlot.h */,
+				C071BD505C7FE123FE480C3977D65C49 /* CPTRangePlot.m */,
+				719EEF86985BE6F1870E26E2C2F381FF /* CPTResponder.h */,
+				188832975D5CB1A36238F333B8C20751 /* CPTScatterPlot.h */,
+				197438E0435477E8884EFE28ED46B0EA /* CPTScatterPlot.m */,
+				F854C0006C5097B19FA0DD7844790FB4 /* CPTShadow.h */,
+				643A281E5F12F8FDAEB1C75E0363AF2D /* CPTShadow.m */,
+				07E63EE3AABAA39761061E66DB9FFE63 /* CPTTextLayer.h */,
+				9EFF8FA95E84FCC993DC681CF7F225D2 /* CPTTextLayer.m */,
+				EC1B0AD0B27F7C07714E4A9827651676 /* CPTTextStyle.h */,
+				BDBB0437E97D2F1C697FBC4E7803C190 /* CPTTextStyle.m */,
+				F7A3D87107536F8D6BD7C1AC51B57482 /* CPTTextStylePlatformSpecific.h */,
+				D39321635880CBEE2D8697C35CC9B432 /* CPTTextStylePlatformSpecific.m */,
+				1C9C9D06B56D143C02EA750C9242CBC5 /* CPTTheme.h */,
+				2EAFBCB05DB8541F7FA49FE2C0E3A738 /* CPTTheme.m */,
+				1747776F5E9C22A7397D1EE116626270 /* CPTTimeFormatter.h */,
+				8BA90B0A618257D3318F08A5471DD36C /* CPTTimeFormatter.m */,
+				719A45D884FB2F59F5F929D05118587C /* CPTTradingRangePlot.h */,
+				65AC9E90EE8FC8803F5AE6FF989C2619 /* CPTTradingRangePlot.m */,
+				F6A4A8F3F6DCFA9934B049EE1A1B4403 /* CPTUtilities.h */,
+				A6D5413F60660D6B04E8973E72EE0488 /* CPTUtilities.m */,
+				6BF306DCAFFD82D2794BDFEEE6554AC0 /* CPTXYAxis.h */,
+				1D64D2E424B4B8913258281AEAA7144C /* CPTXYAxis.m */,
+				2431ACD60F11D4F5EDE15723B3BA65D2 /* CPTXYAxisSet.h */,
+				E49509CEFE1936D81C8567992B111877 /* CPTXYAxisSet.m */,
+				96A8F6CBEE79CBA84C52ECC2CD01FFF1 /* CPTXYGraph.h */,
+				D329E7C21AC7C6818C8764A339172B18 /* CPTXYGraph.m */,
+				C4FE3445180F52DE08C12FC1C38C9253 /* CPTXYPlotSpace.h */,
+				EEB2DFCBE29DC741C7C84476C953F412 /* CPTXYPlotSpace.m */,
+				2572ECF5A87BF09EE7AB1D00620725CA /* NSCoderExtensions.h */,
+				07FC814E02145FE096D7D671C0F123AA /* NSCoderExtensions.m */,
+				35A775F8BCF5BDAFC5ECA3BA094FF086 /* NSDecimalNumberExtensions.h */,
+				51099A0A0275EE2E30385A2DC7122949 /* NSDecimalNumberExtensions.m */,
+				8FEC5159A98D60B32AB3D9401DC691D0 /* NSNumberExtensions.h */,
+				50BD4DC1211F42DDCB79702366E02AB4 /* NSNumberExtensions.m */,
+				EE23B5B8DDD72461C3D05F0BDDE0D20B /* Support Files */,
 			);
-			name = "Support Files";
-			path = "../Target Support Files/Starscream";
+			name = CorePlot;
+			path = CorePlot;
 			sourceTree = "<group>";
 		};
-		C9E7D620CF21472724F1E91EE7998B6A /* Products */ = {
+		C3A3961845EC9AFC6C8BB13CBDB470EF /* Products */ = {
 			isa = PBXGroup;
 			children = (
+				D7DB1281B47952393EC6638394696D1A /* CorePlot.framework */,
 				B5C1C95B545C576AD2B548FE75539B20 /* Pods_AirQualityMonitoring.framework */,
 				49E0D94BB49052AABB99130316C0AF24 /* Pods_AirQualityMonitoring_AirQualityMonitoringUITests.framework */,
 				6D14240BDA5EB2B16B829CBEAE21DF9D /* Pods_AirQualityMonitoringTests.framework */,
@@ -281,19 +920,11 @@
 			isa = PBXGroup;
 			children = (
 				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
-				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
-				00B2FEDCAC8A8BACE0F9A4E951E14F8C /* Pods */,
-				C9E7D620CF21472724F1E91EE7998B6A /* Products */,
+				03C5C200A0787E300053CFA8F53CA094 /* Frameworks */,
+				03173B8E35DCADB6C0E40D8E7534F13C /* Pods */,
+				C3A3961845EC9AFC6C8BB13CBDB470EF /* Products */,
 				773A2E169DDE0F6643D657CDE762DEC8 /* Targets Support Files */,
 			);
-			sourceTree = "<group>";
-		};
-		D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				578452D2E740E91742655AC8F1636D1F /* iOS */,
-			);
-			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		D9071CFC910E4EE7CA0D5CEDE3B04C68 /* Pods-AirQualityMonitoring */ = {
@@ -313,22 +944,45 @@
 			path = "Target Support Files/Pods-AirQualityMonitoring";
 			sourceTree = "<group>";
 		};
+		EE23B5B8DDD72461C3D05F0BDDE0D20B /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				B8346865FF0FFA89344CE7457EF3A70D /* CorePlot.modulemap */,
+				1F49ADF4A32D91FFF0710D083ED18CE1 /* CorePlot-dummy.m */,
+				40906B24AC791C57453AA3919B529D17 /* CorePlot-Info.plist */,
+				AC0D7352F98E74981409BA108809FEF2 /* CorePlot-prefix.pch */,
+				E7B1B8826F781A9AC975549BDA3B2605 /* CorePlot-umbrella.h */,
+				C37B9199BCA7CA19FAE61F03B83CF514 /* CorePlot.debug.xcconfig */,
+				DEA416215D30BA75A951253CEC77922D /* CorePlot.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/CorePlot";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		0342C3B5A3EEA1EBA5238343BDC96B25 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				C5349DA0CD74D6B492FEECCC6144D235 /* Pods-AirQualityMonitoring-umbrella.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		09DA05D2DC53943020EB18EA4CBF7DA0 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				C57412A136734F2D7D6E837FC05B15E1 /* Pods-AirQualityMonitoringTests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		34D5952E318E6D4EB6F7F936C1BCA224 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C58231FB1D28343EE336B07EC7589C1E /* Pods-AirQualityMonitoring-AirQualityMonitoringUITests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8169B30E39AC30F27A23A9EF160E1366 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A74FBB6887801634A7BED536012C4836 /* Pods-AirQualityMonitoring-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -340,17 +994,133 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		A7FCA6FB02DA27F252A27825D7ED731A /* Headers */ = {
+		A7540FD9A2039BE91A50AC5CDCBA7DFC /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				47F9756491ABF30C465923FD18867EF8 /* Pods-AirQualityMonitoring-AirQualityMonitoringUITests-umbrella.h in Headers */,
+				52952B877C504CC0CA16286B2A7D4068 /* _CPTAnimationCGFloatPeriod.h in Headers */,
+				A51FA4217F4C2CE08C53ABC24CA1D89F /* _CPTAnimationCGPointPeriod.h in Headers */,
+				135A1447F8E8C7A42F3462C50D9F475F /* _CPTAnimationCGRectPeriod.h in Headers */,
+				752F808B718CDE92AD2B31AA537884C9 /* _CPTAnimationCGSizePeriod.h in Headers */,
+				DC60E6B563CAF82DDB9A390C8AB4FB93 /* _CPTAnimationNSDecimalPeriod.h in Headers */,
+				7B4359556763428AE125868EF34229DC /* _CPTAnimationNSNumberPeriod.h in Headers */,
+				437CF0CD64FEA275D593163A682BB486 /* _CPTAnimationPlotRangePeriod.h in Headers */,
+				52FDA1D3037EF8194E88EAE0EFC5D8C1 /* _CPTAnimationTimingFunctions.h in Headers */,
+				596159805B98D764761627DC70358C6B /* _CPTBorderLayer.h in Headers */,
+				E4B68DC04C7276E23A8E44A8DCF0D707 /* _CPTConstraintsFixed.h in Headers */,
+				E10FB76B705FFB39EB4C06FB39477E0C /* _CPTConstraintsRelative.h in Headers */,
+				23D06B83548C0471419A48FB15F0A6F6 /* _CPTDarkGradientTheme.h in Headers */,
+				F27289BE2936C0B26649778F9910CFFB /* _CPTFillColor.h in Headers */,
+				BE83539330A6C6504B3884CF41918649 /* _CPTFillGradient.h in Headers */,
+				AC26B0577719E38D156341D8FF6ED539 /* _CPTFillImage.h in Headers */,
+				5C453B56AC0120F389FBFD40D2C913C0 /* _CPTMaskLayer.h in Headers */,
+				79BF69D45BB28662F757502152ABB8C3 /* _CPTPlainBlackTheme.h in Headers */,
+				3755A01502011152D7285129BCF81FCE /* _CPTPlainWhiteTheme.h in Headers */,
+				251B810B075E64C399D31C1E54F39C23 /* _CPTSlateTheme.h in Headers */,
+				401E78AB9F9649F6405BE42F170DDD1D /* _CPTStocksTheme.h in Headers */,
+				99F9F7CE64B0AA8F900D76EDAD5E458C /* _CPTXYTheme.h in Headers */,
+				A4524AA2CEB1B734A2F48C7D192D8219 /* CorePlot-CocoaTouch.h in Headers */,
+				F381D8587898441A09CEEE49E1CCD44D /* CorePlot-umbrella.h in Headers */,
+				398521597815AFF9E859834441D2DFF1 /* CorePlot.h in Headers */,
+				BDBDAA381BD33E1EECE2406724036E9B /* CPTAnimation.h in Headers */,
+				C6C6EBC5F37D5FBB6AE8804AE08886DE /* CPTAnimationOperation.h in Headers */,
+				00AD8D57A4327B3091EF3FF275B0A0F5 /* CPTAnimationPeriod.h in Headers */,
+				04BCBC5553A5C90B36DA6D6D57278489 /* CPTAnnotation.h in Headers */,
+				561EC9A7E023FBB106D6F5F2BD7B3CA4 /* CPTAnnotationHostLayer.h in Headers */,
+				1C14B37E0DE300F055BF5C82E6590D7F /* CPTAxis.h in Headers */,
+				124DC89738FAFEF48C8FEA69D85661DE /* CPTAxisLabel.h in Headers */,
+				1F6C512933139A1E7174F199E03E757F /* CPTAxisLabelGroup.h in Headers */,
+				DD7AE602ED748AC94E2776A7AB6FD612 /* CPTAxisSet.h in Headers */,
+				7D95AE68164D7490C78F6C0B9A95E843 /* CPTAxisTitle.h in Headers */,
+				C18296AD859F6082D351436CB594AD2B /* CPTBarPlot.h in Headers */,
+				86A09325C04507D3E2E08488B6C36914 /* CPTBorderedLayer.h in Headers */,
+				8A0D0455CAEB39022F8C2094136F820A /* CPTCalendarFormatter.h in Headers */,
+				6CD1F1A0C22A5C5AF4EFC1763DFB5599 /* CPTColor.h in Headers */,
+				D3CDE72A3D238FA689B5249BFA439C72 /* CPTColorSpace.h in Headers */,
+				5CFAEABF672025658D309D45289BA6EC /* CPTConstraints.h in Headers */,
+				4AAB1ABA43C86AC8F914B43F699A0F4D /* CPTDebugQuickLook.h in Headers */,
+				24899282849C601442EF7FB942A4BA1B /* CPTDefinitions.h in Headers */,
+				74F79ACE1CF79D113ECF9DA23ECA2391 /* CPTDerivedXYGraph.h in Headers */,
+				6B31D3E586423A55597999CB069FBAAF /* CPTExceptions.h in Headers */,
+				2EA02B2A9A33B30CAE9B5C778F07EC25 /* CPTFill.h in Headers */,
+				272DE32DED1CC543865650E7BDE1D92D /* CPTFunctionDataSource.h in Headers */,
+				18F1703A9433815061C1222D20F626ED /* CPTGradient.h in Headers */,
+				0B3029C3B3B5FD69B6A77AC75281CF1B /* CPTGraph.h in Headers */,
+				B249A672C7392C3844FEE3D98A33CD16 /* CPTGraphHostingView.h in Headers */,
+				8D0584F03043480C47A5C1C983F0CE40 /* CPTGridLineGroup.h in Headers */,
+				DB5576B87B9A69EE12CB401C930B9ED4 /* CPTGridLines.h in Headers */,
+				27FB94692536F45D259BAB86333B4E70 /* CPTImage.h in Headers */,
+				E4B7C7E24D904A81FB2D8C9B10CE4B7C /* CPTLayer.h in Headers */,
+				34D5CA5A79C811234FC37D583E9C5F02 /* CPTLayerAnnotation.h in Headers */,
+				1F9AAEB0584A5D1E7B049A85AB456596 /* CPTLegend.h in Headers */,
+				AE26F4E0248CF6D4BD1F1B906E768F3E /* CPTLegendEntry.h in Headers */,
+				89FB70F7A79AE454F156746393DE7F11 /* CPTLimitBand.h in Headers */,
+				14F2061BC440E3DB44066D2B9BDC06B0 /* CPTLineCap.h in Headers */,
+				C31ACA37E2775E41416305B2D4BB00B7 /* CPTLineStyle.h in Headers */,
+				3168458E2BE3A583A6DFF749E5F86B51 /* CPTMutableLineStyle.h in Headers */,
+				4B79266A381E01F98A929687BF7E4649 /* CPTMutableNumericData+TypeConversion.h in Headers */,
+				10B362A1C1F1D5969C86D7EA7B0131D8 /* CPTMutableNumericData.h in Headers */,
+				C20A1D3FD02E531F4AAF331E5E7F8B12 /* CPTMutablePlotRange.h in Headers */,
+				744FC603989F967B43D174AB736D496B /* CPTMutableShadow.h in Headers */,
+				E8EBEF617CE46D40CF2511AE6DF5836C /* CPTMutableTextStyle.h in Headers */,
+				BACBEEA85BDEB43904507FAB696AE8F1 /* CPTNumericData+TypeConversion.h in Headers */,
+				5CF23C4F32A73406287F0600CC3E1521 /* CPTNumericData.h in Headers */,
+				E703B64CC962A123933C9702A780D37C /* CPTNumericDataType.h in Headers */,
+				EE326F6BC4322469AA4406BA90959822 /* CPTPathExtensions.h in Headers */,
+				4300A4B7FB171806BF0767818ED28912 /* CPTPieChart.h in Headers */,
+				EF1CE9844C507E151C72DDECBAD98150 /* CPTPlatformSpecificCategories.h in Headers */,
+				D265DB454546C9E8EDDD55F62C6830F9 /* CPTPlatformSpecificDefines.h in Headers */,
+				483EE8BF8479A7C52266DF64FFB0605D /* CPTPlatformSpecificFunctions.h in Headers */,
+				E5A2FC92B444C187EA38FB9A9FD728D3 /* CPTPlot.h in Headers */,
+				92838B53D9AEA398ADC5FFBE426FA99A /* CPTPlotArea.h in Headers */,
+				16D494C6F94A4AAD7DE65582770A2FB2 /* CPTPlotAreaFrame.h in Headers */,
+				F4F259FDBB29CE5EE3AF563AE12AB049 /* CPTPlotGroup.h in Headers */,
+				EEB93D508BCEA0B61B22E186A2062A08 /* CPTPlotRange.h in Headers */,
+				A789C37D4913A72153781DBEE9275F02 /* CPTPlotSpace.h in Headers */,
+				CE1735B819434035DB0B84A5E430A71E /* CPTPlotSpaceAnnotation.h in Headers */,
+				693A0F86621132F6E86169533DB17EC3 /* CPTPlotSymbol.h in Headers */,
+				5668E27241D6BF3E9E60B11D25359C78 /* CPTRangePlot.h in Headers */,
+				F1653427F6F4F75819BC1A378BBB247C /* CPTResponder.h in Headers */,
+				BF9C4EA90AB70F45D41A1B4C916D03E3 /* CPTScatterPlot.h in Headers */,
+				67BE75371010AC27FA88EC5CF022F596 /* CPTShadow.h in Headers */,
+				BDD7080C634B83CA0F177827A2E62F12 /* CPTTextLayer.h in Headers */,
+				F8DB27770E0FDE65025CDB71762BC10B /* CPTTextStyle.h in Headers */,
+				850BB426C7A040EA86E155F18CB3F450 /* CPTTextStylePlatformSpecific.h in Headers */,
+				23A1E8FD20ED51A858AB0EA2DA2BD9F6 /* CPTTheme.h in Headers */,
+				C5F16442A723BE4DC40782AEEA09382E /* CPTTimeFormatter.h in Headers */,
+				3CB4707D9D62AF606A6876F5C11E91FC /* CPTTradingRangePlot.h in Headers */,
+				5D15F6C1BBA6EFBEA2DC5D12F8F75341 /* CPTUtilities.h in Headers */,
+				8FE76AA87D06C0889A05FE183E27F45E /* CPTXYAxis.h in Headers */,
+				C0E0A92C94D661C7F6CED58D8226C790 /* CPTXYAxisSet.h in Headers */,
+				5B987C19D8BD2A8B776506103EBDF3EE /* CPTXYGraph.h in Headers */,
+				EA2AAF01CD121669F7AD7FB42FB2A6C1 /* CPTXYPlotSpace.h in Headers */,
+				35791C270A9B00C24871C8BE4E766461 /* NSCoderExtensions.h in Headers */,
+				26F3937AF78525A4B7673BB851DA06B4 /* NSDecimalNumberExtensions.h in Headers */,
+				AFD71CAAFA90408662B7744EDAAD52C5 /* NSNumberExtensions.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
+		03DD7CB0D843ACA94CB5F68975736BB9 /* CorePlot */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CD6F4D9FF39DB2AF3CAB1DF281B6ED5A /* Build configuration list for PBXNativeTarget "CorePlot" */;
+			buildPhases = (
+				A7540FD9A2039BE91A50AC5CDCBA7DFC /* Headers */,
+				CD8D8441496E5637457157F5F7AFF961 /* Sources */,
+				7777FBC6C56110263838037140C5C2CA /* Frameworks */,
+				3DFB415789956EF3C2B8F0E9D6ADF04B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CorePlot;
+			productName = CorePlot;
+			productReference = D7DB1281B47952393EC6638394696D1A /* CorePlot.framework */;
+			productType = "com.apple.product-type.framework";
+		};
 		47AE1FA1DC2DF95A4A10C9A6F31E87F2 /* Pods-AirQualityMonitoringTests */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5D3ABF08A896766EC8051DB1D3A3B858 /* Build configuration list for PBXNativeTarget "Pods-AirQualityMonitoringTests" */;
@@ -363,7 +1133,7 @@
 			buildRules = (
 			);
 			dependencies = (
-				9F2DB6D146026B14F1B0EC392DDEF6D6 /* PBXTargetDependency */,
+				7B47CD570736716140F11C4BC4680A73 /* PBXTargetDependency */,
 			);
 			name = "Pods-AirQualityMonitoringTests";
 			productName = "Pods-AirQualityMonitoringTests";
@@ -390,17 +1160,18 @@
 		};
 		F248EB2A0940CC74920BFD48387BC788 /* Pods-AirQualityMonitoring-AirQualityMonitoringUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 59E663FD880DB546B3D94C86469F64EA /* Build configuration list for PBXNativeTarget "Pods-AirQualityMonitoring-AirQualityMonitoringUITests" */;
+			buildConfigurationList = 797ADB61AAE8868B65BD2FA36A980CCB /* Build configuration list for PBXNativeTarget "Pods-AirQualityMonitoring-AirQualityMonitoringUITests" */;
 			buildPhases = (
-				A7FCA6FB02DA27F252A27825D7ED731A /* Headers */,
-				9A6CFD60B037970947FF9A82E6FC8107 /* Sources */,
-				80B2F0468D52FF4A06E842A34441CB12 /* Frameworks */,
-				28836DCDBFEAE7C5113F31FF6A93D89A /* Resources */,
+				34D5952E318E6D4EB6F7F936C1BCA224 /* Headers */,
+				E74E65A51925B8BE5723AA660383AFC9 /* Sources */,
+				06740C9CD696BAE9217B329D9017423A /* Frameworks */,
+				C2BC882FEB86C767A6EE60B4A5CD5DC9 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				5E05A20287C360F94A213E328C4D1CCB /* PBXTargetDependency */,
+				9BD2948F53BFD84FF242AAF4BB8B37FD /* PBXTargetDependency */,
+				2A2A5D9CC838CD59384B74C7EBC24560 /* PBXTargetDependency */,
 			);
 			name = "Pods-AirQualityMonitoring-AirQualityMonitoringUITests";
 			productName = "Pods-AirQualityMonitoring-AirQualityMonitoringUITests";
@@ -409,17 +1180,18 @@
 		};
 		FB8F5453EEF454EA29D075BE69815BAB /* Pods-AirQualityMonitoring */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = A302C581ADAA9AFFB75C4407D675B1CF /* Build configuration list for PBXNativeTarget "Pods-AirQualityMonitoring" */;
+			buildConfigurationList = D5EC39319FA99976300FAFEB7E9276A7 /* Build configuration list for PBXNativeTarget "Pods-AirQualityMonitoring" */;
 			buildPhases = (
-				0342C3B5A3EEA1EBA5238343BDC96B25 /* Headers */,
-				4DFDD0BF8325B8882137F732BADF5E1E /* Sources */,
-				5C53FD4141920DF3FC5B7D17A79E285D /* Frameworks */,
-				A5BF35CA735966ED94574D7ED5D1AFFA /* Resources */,
+				8169B30E39AC30F27A23A9EF160E1366 /* Headers */,
+				50B1F93AA1F27D6EE9B83AFE118CFB05 /* Sources */,
+				583A6C82AF379449823ACF3D9DC0BC63 /* Frameworks */,
+				A155CE26376A2374DE8ED2D684F9F850 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				40AEC270525203F73C6713E2C483C4F6 /* PBXTargetDependency */,
+				766E6BAF7EFD4828090E89864E178A14 /* PBXTargetDependency */,
+				151C3D2D5617ED70540F3CE8B207F821 /* PBXTargetDependency */,
 			);
 			name = "Pods-AirQualityMonitoring";
 			productName = "Pods-AirQualityMonitoring";
@@ -444,10 +1216,11 @@
 				Base,
 			);
 			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
-			productRefGroup = C9E7D620CF21472724F1E91EE7998B6A /* Products */;
+			productRefGroup = C3A3961845EC9AFC6C8BB13CBDB470EF /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
+				03DD7CB0D843ACA94CB5F68975736BB9 /* CorePlot */,
 				FB8F5453EEF454EA29D075BE69815BAB /* Pods-AirQualityMonitoring */,
 				F248EB2A0940CC74920BFD48387BC788 /* Pods-AirQualityMonitoring-AirQualityMonitoringUITests */,
 				47AE1FA1DC2DF95A4A10C9A6F31E87F2 /* Pods-AirQualityMonitoringTests */,
@@ -457,7 +1230,7 @@
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		28836DCDBFEAE7C5113F31FF6A93D89A /* Resources */ = {
+		3DFB415789956EF3C2B8F0E9D6ADF04B /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -471,7 +1244,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		A5BF35CA735966ED94574D7ED5D1AFFA /* Resources */ = {
+		A155CE26376A2374DE8ED2D684F9F850 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C2BC882FEB86C767A6EE60B4A5CD5DC9 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -496,19 +1276,122 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		4DFDD0BF8325B8882137F732BADF5E1E /* Sources */ = {
+		50B1F93AA1F27D6EE9B83AFE118CFB05 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0FC2A63438E3F0BF1AA9002737FEBE4A /* Pods-AirQualityMonitoring-dummy.m in Sources */,
+				CCC78776E5E038668519F83492ECF4D2 /* Pods-AirQualityMonitoring-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		9A6CFD60B037970947FF9A82E6FC8107 /* Sources */ = {
+		CD8D8441496E5637457157F5F7AFF961 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				630F9707C298FB8EA9292D53B032499F /* Pods-AirQualityMonitoring-AirQualityMonitoringUITests-dummy.m in Sources */,
+				B7E4A31BBFA724C456D7CB1EA67CA867 /* _CPTAnimationCGFloatPeriod.m in Sources */,
+				7E72398E14B6E8F953BDE9A0AFC988D9 /* _CPTAnimationCGPointPeriod.m in Sources */,
+				EDC5AD83B5787364CD273E9A854F70C6 /* _CPTAnimationCGRectPeriod.m in Sources */,
+				48E9284D3D7AB376694A9D1AB63CC63C /* _CPTAnimationCGSizePeriod.m in Sources */,
+				060686E408C4544F8AE8C872F40BD22E /* _CPTAnimationNSDecimalPeriod.m in Sources */,
+				7E3C1CB0B97AEF5065AA9E0BA4AA64B2 /* _CPTAnimationNSNumberPeriod.m in Sources */,
+				C17C0003914477AC6BBB1C4A87FE09E1 /* _CPTAnimationPlotRangePeriod.m in Sources */,
+				D0DBABAC1E43C90B483F651BB6257B7C /* _CPTAnimationTimingFunctions.m in Sources */,
+				931E0F53F918AE2D33A9319292CC6B44 /* _CPTBorderLayer.m in Sources */,
+				281C58A9BBE906CD4FE4AA72119DE4DE /* _CPTConstraintsFixed.m in Sources */,
+				7EA0E35F7B8D96D5CE6DC3A077EEBDF2 /* _CPTConstraintsRelative.m in Sources */,
+				B147B27D4F073D1C4536EEBADBB668BC /* _CPTDarkGradientTheme.m in Sources */,
+				1ECD599F226C7BFAB4695CC41A01FE16 /* _CPTFillColor.m in Sources */,
+				3A0C409798C00C01DE6995CA14B2F5DB /* _CPTFillGradient.m in Sources */,
+				1CE7B19C469AEEDB78DB5B84A5EB661F /* _CPTFillImage.m in Sources */,
+				D08D9BA007941EC227D86E0908A43B52 /* _CPTMaskLayer.m in Sources */,
+				51EEB978ED7505A328E7B0EDF71E1818 /* _CPTPlainBlackTheme.m in Sources */,
+				2C0F96CF53CFCE194DE7569E012A07C9 /* _CPTPlainWhiteTheme.m in Sources */,
+				A2C14E80441FCBD161E88BA7CA73F897 /* _CPTSlateTheme.m in Sources */,
+				C9B9606B1272E299F88DF960CFAF2962 /* _CPTStocksTheme.m in Sources */,
+				7D791CE56069E4E5A9A9230FF35D6012 /* _CPTXYTheme.m in Sources */,
+				58B3CC1D11B69BC32A34F67709E7C2F4 /* CorePlot-dummy.m in Sources */,
+				5BE9A50A7433A500E8CD1689C6AF77AF /* CPTAnimation.m in Sources */,
+				9C5064E659D2E3A39D48A85D18023AAF /* CPTAnimationOperation.m in Sources */,
+				AB51AB090319A53714E3F3A8FA037CBF /* CPTAnimationPeriod.m in Sources */,
+				0CB3123E5CC1B8DE344F400A919F1FD6 /* CPTAnnotation.m in Sources */,
+				1E8A57D2036013B1D370556F6FA2163B /* CPTAnnotationHostLayer.m in Sources */,
+				53F5E2014BB88F70FCD78997BA766DED /* CPTAxis.m in Sources */,
+				B555415D5D99FD653F98829A968F42DA /* CPTAxisLabel.m in Sources */,
+				AD626C186868BC5A3B634ECE1A5DCCE1 /* CPTAxisLabelGroup.m in Sources */,
+				1C66D714978A131B8E652CBA9D916C44 /* CPTAxisSet.m in Sources */,
+				E6F8830D9C2B988BB22912FDBF841BB2 /* CPTAxisTitle.m in Sources */,
+				ECD36874127A935FD6E6EB18AF5C090F /* CPTBarPlot.m in Sources */,
+				2ACBAE4410F07E9768598B75984ECCD4 /* CPTBorderedLayer.m in Sources */,
+				473F0F58D4A951C68EBE8A056C780779 /* CPTCalendarFormatter.m in Sources */,
+				946DA9D817C2AF4A3200CF651269B137 /* CPTColor.m in Sources */,
+				C28D57BB782780998FAB21707DA20DD8 /* CPTColorSpace.m in Sources */,
+				268D0340E6A89E7EDB7E0F66049D521A /* CPTConstraints.m in Sources */,
+				4549B2EFADDBAECEA15A1B99A29401E8 /* CPTDefinitions.m in Sources */,
+				B17B3D932F8F88C9154D26EF7CA2ABD2 /* CPTDerivedXYGraph.m in Sources */,
+				945A19BE808A8A70C14055F2D06C4AA0 /* CPTExceptions.m in Sources */,
+				4A8BD40384C41A2C9F988A3722900B42 /* CPTFill.m in Sources */,
+				FF41D0DEB17575D290A2EB83245DF414 /* CPTFunctionDataSource.m in Sources */,
+				DF3BB9BA146A88CEE577AF8406E350EE /* CPTGradient.m in Sources */,
+				7E5FF53F68F597CFBE7F5CCC4FEBE6EC /* CPTGraph.m in Sources */,
+				C2479C0609F31654F25757EE9F30A26A /* CPTGraphHostingView.m in Sources */,
+				32CA32CFE9DC0968A04B09F2EC02FD30 /* CPTGridLineGroup.m in Sources */,
+				004C14AC2BD4AA6772DCD06EB902F1CC /* CPTGridLines.m in Sources */,
+				197513A2621EC79055B334CDC663F3BB /* CPTImage.m in Sources */,
+				9EBB2B92F0D8113AF320B499FB481649 /* CPTImagePlatformSpecific.m in Sources */,
+				16216C63FB422037DCCF1EFFDF45D97B /* CPTLayer.m in Sources */,
+				9FC0C18232A5D2EBDF66605B961C7736 /* CPTLayerAnnotation.m in Sources */,
+				9E5CECC5053D7C5A8ED283A54C2A9D7A /* CPTLegend.m in Sources */,
+				886F400C8DC065A5B2780D74867C1A7A /* CPTLegendEntry.m in Sources */,
+				A3EBB274296C1FD6B9AA56A08143149D /* CPTLimitBand.m in Sources */,
+				1D6632975494554732368DAB9A903EAB /* CPTLineCap.m in Sources */,
+				5A2184FFFB2E4038B0B04B48EB40D124 /* CPTLineStyle.m in Sources */,
+				633CB4E57E832593995C234AD17A29AE /* CPTMutableLineStyle.m in Sources */,
+				A55EEC8F80010FFE1CFBF39362651AAC /* CPTMutableNumericData+TypeConversion.m in Sources */,
+				572A588F92F5F7A95E0BF20770A6580B /* CPTMutableNumericData.m in Sources */,
+				D993AFA106BF03BCFB676BF705A46A1C /* CPTMutablePlotRange.m in Sources */,
+				04069D864A50D7B0D7A62F817978C878 /* CPTMutableShadow.m in Sources */,
+				F8E4CEC77E275B7A3A6B91D0E8F7335B /* CPTMutableTextStyle.m in Sources */,
+				B2730C21DDFEED1E2D97D227C94CBCCC /* CPTNumericData+TypeConversion.m in Sources */,
+				D64457A0ED71F0C16D6848367A045483 /* CPTNumericData.m in Sources */,
+				24A5F4CE5F3F014D2B2EE226E5071947 /* CPTNumericDataType.m in Sources */,
+				6FA61AE5470F733DCC13502601CFEAA3 /* CPTPathExtensions.m in Sources */,
+				E146B540F2C7373EE30F177550FF3C35 /* CPTPieChart.m in Sources */,
+				E5804850318B527BB7FF824AE4B26ED2 /* CPTPlatformSpecificCategories.m in Sources */,
+				CBB5F6A01214EC4017F79E21E845E638 /* CPTPlatformSpecificDefines.m in Sources */,
+				AEE3E3BDF0D28C4FCF9CC585967D88E7 /* CPTPlatformSpecificFunctions.m in Sources */,
+				C427B8A005DE7C11E0505F37A312FD29 /* CPTPlot.m in Sources */,
+				9A7B8889C9884DB4C22B297F6163DF1D /* CPTPlotArea.m in Sources */,
+				D142635F645453DBF3A19FA1D28E14B7 /* CPTPlotAreaFrame.m in Sources */,
+				E782C24BB985A5F4BDED5B27F74AFB38 /* CPTPlotGroup.m in Sources */,
+				28BCF774D45F16CAF8349D10C7A7C5E3 /* CPTPlotRange.m in Sources */,
+				028929526E2E2D4E5E6AE596B692189B /* CPTPlotSpace.m in Sources */,
+				3794AC059BABCD35E15191DF66BC1D20 /* CPTPlotSpaceAnnotation.m in Sources */,
+				4A1B93C6D2348F9E1A620BF209D86DC1 /* CPTPlotSymbol.m in Sources */,
+				4401FC4E835889AF9D67030857F79355 /* CPTRangePlot.m in Sources */,
+				DA60F5CAC0FA5B0CDD9BDD2AFC303BA1 /* CPTScatterPlot.m in Sources */,
+				5215D387C3D333283CC290727424F78A /* CPTShadow.m in Sources */,
+				64FC6F9F9AAC5570AA3FC3CA21471817 /* CPTTextLayer.m in Sources */,
+				3F2DFBDEA85D365F20662DD48935CE64 /* CPTTextStyle.m in Sources */,
+				AC3127ABB7F5041D74B60CCE09DB24FC /* CPTTextStylePlatformSpecific.m in Sources */,
+				66C760F6AA735797F956D7328D5541C4 /* CPTTheme.m in Sources */,
+				DD76F81810AC3D7626CAD03B0467E6A8 /* CPTTimeFormatter.m in Sources */,
+				FFBA5DBD14DC5279EA09F9D8EF9F9698 /* CPTTradingRangePlot.m in Sources */,
+				A95AF8BBC08C12C8AAA8B5E9A84C1606 /* CPTUtilities.m in Sources */,
+				0FF9606FB92A6963CEEA7ADE46B85649 /* CPTXYAxis.m in Sources */,
+				8B4EF1EFB0DEA190807EE679177298A2 /* CPTXYAxisSet.m in Sources */,
+				7DE58A04D1388501952A2D9E094A36C5 /* CPTXYGraph.m in Sources */,
+				ED8FA3F57C545C96C81419D81A498F31 /* CPTXYPlotSpace.m in Sources */,
+				A9F575321401B4EA8501D37A74364C46 /* NSCoderExtensions.m in Sources */,
+				A674C398F46A2E2232ED00C9B3FB65D6 /* NSDecimalNumberExtensions.m in Sources */,
+				BACEA1163FD9E9F76C8B5ED79D6D731A /* NSNumberExtensions.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E74E65A51925B8BE5723AA660383AFC9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CA9DD94A2C0123DCBD9575398B82C701 /* Pods-AirQualityMonitoring-AirQualityMonitoringUITests-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -543,68 +1426,42 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		40AEC270525203F73C6713E2C483C4F6 /* PBXTargetDependency */ = {
+		151C3D2D5617ED70540F3CE8B207F821 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = Starscream;
 			target = 9B78EE4AF6AE03E79D88886319853FF7 /* Starscream */;
-			targetProxy = ECECA0E8B61405FD590D1229500E152A /* PBXContainerItemProxy */;
+			targetProxy = 3E858F09E0C90720830416BD641540E7 /* PBXContainerItemProxy */;
 		};
-		5E05A20287C360F94A213E328C4D1CCB /* PBXTargetDependency */ = {
+		2A2A5D9CC838CD59384B74C7EBC24560 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = Starscream;
 			target = 9B78EE4AF6AE03E79D88886319853FF7 /* Starscream */;
-			targetProxy = 1F1EA792129E76762628CF54B55E99BF /* PBXContainerItemProxy */;
+			targetProxy = 7E59306DC805C32147820D6E1595ADB5 /* PBXContainerItemProxy */;
 		};
-		9F2DB6D146026B14F1B0EC392DDEF6D6 /* PBXTargetDependency */ = {
+		766E6BAF7EFD4828090E89864E178A14 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = CorePlot;
+			target = 03DD7CB0D843ACA94CB5F68975736BB9 /* CorePlot */;
+			targetProxy = 6110CA1B96D33D1AA50E5410BA3EE3E4 /* PBXContainerItemProxy */;
+		};
+		7B47CD570736716140F11C4BC4680A73 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "Pods-AirQualityMonitoring";
 			target = FB8F5453EEF454EA29D075BE69815BAB /* Pods-AirQualityMonitoring */;
-			targetProxy = 14EA98980D85D0AB7984ABA554F196F6 /* PBXContainerItemProxy */;
+			targetProxy = ABEBD96AD48D55C8AC2F3976BF158A6F /* PBXContainerItemProxy */;
+		};
+		9BD2948F53BFD84FF242AAF4BB8B37FD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = CorePlot;
+			target = 03DD7CB0D843ACA94CB5F68975736BB9 /* CorePlot */;
+			targetProxy = CE955A21D07E8D551BE1E153A66358EF /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		009C011F75F8DDD01A527F2460C5B8EA /* Release */ = {
+		307E1980D4CA3A0419EEE3971D4E191C /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 53E1151C8ECE53E8D0F875BB7723A399 /* Pods-AirQualityMonitoring-AirQualityMonitoringUITests.release.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-AirQualityMonitoring-AirQualityMonitoringUITests/Pods-AirQualityMonitoring-AirQualityMonitoringUITests-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-AirQualityMonitoring-AirQualityMonitoringUITests/Pods-AirQualityMonitoring-AirQualityMonitoringUITests.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		46661BA522189819202893918CCF50FC /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 81D862B9ADBD3A0CD302E68F77487EF0 /* Pods-AirQualityMonitoring.debug.xcconfig */;
+			baseConfigurationReference = F8A438E0043FF65283909699E890087D /* Pods-AirQualityMonitoring.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CLANG_ENABLE_OBJC_WEAK = NO;
@@ -634,10 +1491,11 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
-			name = Debug;
+			name = Release;
 		};
 		4BC7450F9457737EE3E637BA155B56F7 /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -705,9 +1563,47 @@
 			};
 			name = Debug;
 		};
-		58920AD11B2FD2BF3DF18C6057B64124 /* Release */ = {
+		513F01E46A92B8EE6928D6B41ACE082B /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = F8A438E0043FF65283909699E890087D /* Pods-AirQualityMonitoring.release.xcconfig */;
+			baseConfigurationReference = 53E1151C8ECE53E8D0F875BB7723A399 /* Pods-AirQualityMonitoring-AirQualityMonitoringUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-AirQualityMonitoring-AirQualityMonitoringUITests/Pods-AirQualityMonitoring-AirQualityMonitoringUITests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-AirQualityMonitoring-AirQualityMonitoringUITests/Pods-AirQualityMonitoring-AirQualityMonitoringUITests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		59BE191E9B169EE966F7B971C09E64C4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 81D862B9ADBD3A0CD302E68F77487EF0 /* Pods-AirQualityMonitoring.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CLANG_ENABLE_OBJC_WEAK = NO;
@@ -737,15 +1633,14 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
-			name = Release;
+			name = Debug;
 		};
 		5EB582B7263201AEC7954D4829953284 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = E6B8353DB672E6C84ABAF6B044BC47F3 /* Starscream.release.xcconfig */;
+			baseConfigurationReference = F9A5EE459B6271A5D1CDBC88EAA055B4 /* Starscream.release.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -809,6 +1704,41 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		765F09E14CA25AB1A6D7DA6FAC833BC8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DEA416215D30BA75A951253CEC77922D /* CorePlot.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/CorePlot/CorePlot-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/CorePlot/CorePlot-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/CorePlot/CorePlot.modulemap";
+				PRODUCT_MODULE_NAME = CorePlot;
+				PRODUCT_NAME = CorePlot;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -917,7 +1847,7 @@
 		};
 		99491276889077FD01AA3B307FBE4F2D /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2C1CF04602B9D61F89BCC51DEA7939B0 /* Starscream.debug.xcconfig */;
+			baseConfigurationReference = EC42D5797508F5AE0D7C6B147B9E4461 /* Starscream.debug.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -949,7 +1879,41 @@
 			};
 			name = Debug;
 		};
-		ECF24533F978401DAEBF28DABB33A179 /* Debug */ = {
+		E4C79FECECAA78CE7E3B1F6B0D26CE68 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C37B9199BCA7CA19FAE61F03B83CF514 /* CorePlot.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/CorePlot/CorePlot-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/CorePlot/CorePlot-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/CorePlot/CorePlot.modulemap";
+				PRODUCT_MODULE_NAME = CorePlot;
+				PRODUCT_NAME = CorePlot;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		FCEE7903D0DFBA8D5301D944276A2982 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 26CFE68DF3B498BA314FBA8F776778C3 /* Pods-AirQualityMonitoring-AirQualityMonitoringUITests.debug.xcconfig */;
 			buildSettings = {
@@ -1007,15 +1971,6 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		59E663FD880DB546B3D94C86469F64EA /* Build configuration list for PBXNativeTarget "Pods-AirQualityMonitoring-AirQualityMonitoringUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				ECF24533F978401DAEBF28DABB33A179 /* Debug */,
-				009C011F75F8DDD01A527F2460C5B8EA /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 		5D3ABF08A896766EC8051DB1D3A3B858 /* Build configuration list for PBXNativeTarget "Pods-AirQualityMonitoringTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -1025,11 +1980,29 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		A302C581ADAA9AFFB75C4407D675B1CF /* Build configuration list for PBXNativeTarget "Pods-AirQualityMonitoring" */ = {
+		797ADB61AAE8868B65BD2FA36A980CCB /* Build configuration list for PBXNativeTarget "Pods-AirQualityMonitoring-AirQualityMonitoringUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				46661BA522189819202893918CCF50FC /* Debug */,
-				58920AD11B2FD2BF3DF18C6057B64124 /* Release */,
+				FCEE7903D0DFBA8D5301D944276A2982 /* Debug */,
+				513F01E46A92B8EE6928D6B41ACE082B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CD6F4D9FF39DB2AF3CAB1DF281B6ED5A /* Build configuration list for PBXNativeTarget "CorePlot" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E4C79FECECAA78CE7E3B1F6B0D26CE68 /* Debug */,
+				765F09E14CA25AB1A6D7DA6FAC833BC8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D5EC39319FA99976300FAFEB7E9276A7 /* Build configuration list for PBXNativeTarget "Pods-AirQualityMonitoring" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				59BE191E9B169EE966F7B971C09E64C4 /* Debug */,
+				307E1980D4CA3A0419EEE3971D4E191C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

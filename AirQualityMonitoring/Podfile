@@ -6,6 +6,7 @@ target 'AirQualityMonitoring' do
   use_frameworks!
 
   pod 'Starscream', '~> 4.0.0'
+  pod 'CorePlot', '~> 2.3'
 
   # Pods for AirQualityMonitoring
 

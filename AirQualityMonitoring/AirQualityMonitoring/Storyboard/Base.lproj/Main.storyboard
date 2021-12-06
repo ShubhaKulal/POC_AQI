@@ -3,6 +3,7 @@
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -98,6 +99,36 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nWx-sl-rgV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="481" y="-88"/>
+        </scene>
+        <!--Detail View Controller-->
+        <scene sceneID="A6B-Lh-Qou">
+            <objects>
+                <viewController storyboardIdentifier="AQMDetailViewController" id="Mrd-6k-YP5" customClass="AQIDetailViewController" customModule="AirQualityMonitoring" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ZPG-fE-7fS">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="s9d-28-aZe" customClass="CPTGraphHostingView">
+                                <rect key="frame" x="10" y="94" width="394" height="718"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="diU-zh-zuG"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="s9d-28-aZe" firstAttribute="leading" secondItem="diU-zh-zuG" secondAttribute="leading" constant="10" id="Dzt-Ko-mR6"/>
+                            <constraint firstItem="diU-zh-zuG" firstAttribute="trailing" secondItem="s9d-28-aZe" secondAttribute="trailing" constant="10" id="Fb9-Rn-gVH"/>
+                            <constraint firstItem="diU-zh-zuG" firstAttribute="bottom" secondItem="s9d-28-aZe" secondAttribute="bottom" constant="50" id="Vee-ME-lmI"/>
+                            <constraint firstItem="s9d-28-aZe" firstAttribute="top" secondItem="diU-zh-zuG" secondAttribute="top" constant="50" id="mW1-te-HKc"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="hostView" destination="s9d-28-aZe" id="yV5-Vj-vRk"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="QOI-bh-Pw6" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1229" y="-88"/>
         </scene>
     </scenes>
     <resources>

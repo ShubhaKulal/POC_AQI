@@ -55,7 +55,12 @@ class AQIListViewController: UITableViewController {
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
-        let element = self.viewModel.defaultCitiesList[indexPath.row]
+         let element = self.viewModel.defaultCitiesList[indexPath.row]
+        let graphViewModel = AQIBaseViewModel(with: [element.city])
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let viewController : AQIDetailViewController = storyboard.instantiateViewController(withIdentifier: "AQMDetailViewController") as! AQIDetailViewController
+        viewController.viewModel = graphViewModel
+        self.navigationController?.pushViewController(viewController, animated: true)
     }
 }
 

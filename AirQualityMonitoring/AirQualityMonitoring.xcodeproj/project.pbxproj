@@ -23,6 +23,8 @@
 		9B8AB260275DF3C700D8C2FC /* AQITableViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B8AB25E275DF3C700D8C2FC /* AQITableViewModel.swift */; };
 		9B8AB261275DF3C700D8C2FC /* AQIBaseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B8AB25F275DF3C700D8C2FC /* AQIBaseViewModel.swift */; };
 		9B8AB271275E0B7D00D8C2FC /* AQIConstant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B8AB270275E0B7D00D8C2FC /* AQIConstant.swift */; };
+		9B8AB28F275E1B1500D8C2FC /* AQIDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B8AB28E275E1B1500D8C2FC /* AQIDetailViewController.swift */; };
+		9B8AB294275E1B2800D8C2FC /* AQIGraphViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B8AB293275E1B2800D8C2FC /* AQIGraphViewModel.swift */; };
 		EAAB8E3F233C2585D332E21F /* Pods_AirQualityMonitoring.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8444E2C8EBDCA0C36B4A326D /* Pods_AirQualityMonitoring.framework */; };
 		EF376871991F9BF1016DF55A /* Pods_AirQualityMonitoring_AirQualityMonitoringUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F298044075D01965BCD33B0F /* Pods_AirQualityMonitoring_AirQualityMonitoringUITests.framework */; };
 /* End PBXBuildFile section */
@@ -71,6 +73,8 @@
 		9B8AB25E275DF3C700D8C2FC /* AQITableViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AQITableViewModel.swift; sourceTree = "<group>"; };
 		9B8AB25F275DF3C700D8C2FC /* AQIBaseViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AQIBaseViewModel.swift; sourceTree = "<group>"; };
 		9B8AB270275E0B7D00D8C2FC /* AQIConstant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AQIConstant.swift; sourceTree = "<group>"; };
+		9B8AB28E275E1B1500D8C2FC /* AQIDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AQIDetailViewController.swift; sourceTree = "<group>"; };
+		9B8AB293275E1B2800D8C2FC /* AQIGraphViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AQIGraphViewModel.swift; sourceTree = "<group>"; };
 		9CDC47549DD65D0EF3000F24 /* Pods-AirQualityMonitoringTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AirQualityMonitoringTests.release.xcconfig"; path = "Target Support Files/Pods-AirQualityMonitoringTests/Pods-AirQualityMonitoringTests.release.xcconfig"; sourceTree = "<group>"; };
 		E1BA8A51765812E94EFD18BA /* Pods-AirQualityMonitoring.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AirQualityMonitoring.release.xcconfig"; path = "Target Support Files/Pods-AirQualityMonitoring/Pods-AirQualityMonitoring.release.xcconfig"; sourceTree = "<group>"; };
 		F23FC7C4B7C75F6242EE0AC7 /* Pods_AirQualityMonitoringTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AirQualityMonitoringTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -186,6 +190,7 @@
 		9B8AB245275DF21400D8C2FC /* View */ = {
 			isa = PBXGroup;
 			children = (
+				9B8AB28E275E1B1500D8C2FC /* AQIDetailViewController.swift */,
 				9B8AB254275DF36A00D8C2FC /* AQITableViewCell.swift */,
 				9B8AB24F275DF35B00D8C2FC /* AQIListViewController.swift */,
 			);
@@ -195,6 +200,7 @@
 		9B8AB246275DF22100D8C2FC /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				9B8AB293275E1B2800D8C2FC /* AQIGraphViewModel.swift */,
 				9B8AB25F275DF3C700D8C2FC /* AQIBaseViewModel.swift */,
 				9B8AB25E275DF3C700D8C2FC /* AQITableViewModel.swift */,
 			);
@@ -478,6 +484,7 @@
 				9B8AB219275DF10100D8C2FC /* AirQualityMonitoring.xcdatamodeld in Sources */,
 				9B8AB271275E0B7D00D8C2FC /* AQIConstant.swift in Sources */,
 				9B8AB260275DF3C700D8C2FC /* AQITableViewModel.swift in Sources */,
+				9B8AB294275E1B2800D8C2FC /* AQIGraphViewModel.swift in Sources */,
 				9B8AB255275DF36A00D8C2FC /* AQITableViewCell.swift in Sources */,
 				9B8AB25A275DF38200D8C2FC /* AQIDataModel.swift in Sources */,
 				9B8AB213275DF10100D8C2FC /* ViewController.swift in Sources */,
@@ -485,6 +492,7 @@
 				9B8AB261275DF3C700D8C2FC /* AQIBaseViewModel.swift in Sources */,
 				9B8AB20F275DF10100D8C2FC /* AppDelegate.swift in Sources */,
 				9B8AB211275DF10100D8C2FC /* SceneDelegate.swift in Sources */,
+				9B8AB28F275E1B1500D8C2FC /* AQIDetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
