@@ -19,3 +19,7 @@ How to run :
 
 
 Time spent : - Spent around 12 hours.This time includes R&D on graph library as well. 
+
+
+<img width="384" alt="AppIcon" src="https://user-images.githubusercontent.com/5120415/144841097-915387a9-80f7-4c01-9c91-4b3a403fd5a2.png">
+
